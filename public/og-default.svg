@@ -1,0 +1,13 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F7F2ED"/>
+  <rect x="0" y="0" width="1200" height="630" fill="#EFE6DF" opacity="0.5"/>
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="100" r="180" fill="#D8B5A6" opacity="0.15"/>
+  <circle cx="150" cy="530" r="140" fill="#D8B5A6" opacity="0.1"/>
+  <!-- Text -->
+  <text x="600" y="260" font-family="Georgia, serif" font-size="72" fill="#4A3428" text-anchor="middle" font-style="italic">Anastasia</text>
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="22" fill="#6E564A" text-anchor="middle" letter-spacing="8">MASSAGE THERAPIST</text>
+  <text x="600" y="390" font-family="Arial, sans-serif" font-size="18" fill="#D8B5A6" text-anchor="middle" letter-spacing="4">LONDON</text>
+  <!-- Divider -->
+  <line x1="500" y1="355" x2="700" y2="355" stroke="#D8B5A6" stroke-width="1"/>
+</svg>
