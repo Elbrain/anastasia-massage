@@ -181,7 +181,7 @@ export default async function BlogPostPage({ params }: Props) {
                 <div className="bg-brown-dark rounded-3xl p-6 text-ivory">
                   <p className="font-display text-xl text-ivory mb-2">Book a Session</p>
                   <p className="text-ivory/60 text-sm mb-5 leading-relaxed">
-                    Ready to experience the benefits yourself? Book with Anastasia in London.
+                    Ready to experience the benefits yourself? Book with Anna in London.
                   </p>
                   <Link href="/booking" className="btn-rose w-full justify-center text-sm">
                     Book Now
@@ -196,7 +196,7 @@ export default async function BlogPostPage({ params }: Props) {
                       <span className="font-display text-lg text-rose">A</span>
                     </div>
                     <div>
-                      <p className="font-body text-sm font-medium text-brown-dark">Anastasia</p>
+                      <p className="font-body text-sm font-medium text-brown-dark">Anna</p>
                       <p className="font-body text-xs text-brown-muted">Certified Massage Therapist</p>
                     </div>
                   </div>

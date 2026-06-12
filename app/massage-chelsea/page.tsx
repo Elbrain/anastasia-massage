@@ -6,35 +6,33 @@ const config: LocalAreaConfig = {
   slug: 'massage-chelsea',
   postcodes: 'SW3 · SW10',
   intro:
-    'Professional massage therapy in Chelsea by certified therapist Anastasia. In-call at the Central London treatment room or outcall to your home in SW3 or SW10. Available daily 11:00–22:00.',
-  keywords: ['massage chelsea', 'massage therapist chelsea', 'deep tissue massage chelsea', 'outcall massage chelsea london', 'mobile massage sw3'],
+    'Sensual massage near Chelsea with Anna — sensual, body-to-body, tantric and nuru massage at a private in-call studio in West Kensington (W14), an easy journey from Chelsea (SW3, SW10). Discreet and unhurried, daily 11:00–22:00.',
+  keywords: ['sensual massage chelsea', 'tantric massage chelsea', 'nuru massage chelsea', 'erotic massage chelsea', 'body to body massage chelsea'],
   body: `
-    <h2>Massage Therapy in Chelsea</h2>
-    <p>Chelsea combines a premium residential address with a strongly professional population — the combination creates consistent demand for quality, personalised massage therapy. Whether you're dealing with the physical toll of a demanding career or want to establish a regular self-care routine, professional massage in Chelsea is accessible both as outcall to your home and as in-call at a Central London treatment room.</p>
+    <h2>Sensual Massage Near Chelsea</h2>
+    <p>From the King's Road to Sloane Square and the riverside streets of SW3 and SW10, Chelsea is one of the most desirable corners of London. My private studio in West Kensington (W14) is a short ride away, offering a calm, sensual retreat from the pace of the city.</p>
 
-    <h2>Chelsea's Specific Needs</h2>
-    <p>The Chelsea demographic — finance and law professionals, creative industry workers, active residents — creates demand for specific types of massage therapy. Deep tissue work for the accumulated shoulder and neck tension of sustained desk work is among the most common requests. Sports massage for regular gym-goers and runners. Swedish and relaxation massage for stress relief and sleep improvement.</p>
-    <p>The Kings Road and Fulham Road both have wellness options, but for genuinely personalised, therapeutic work from a certified independent therapist, an in-call or outcall arrangement typically offers better value and better outcomes.</p>
+    <h2>An Easy Journey from Chelsea</h2>
+    <p>All sessions are in-call at my warm, candlelit West Kensington studio — reachable from Chelsea in minutes by taxi, or via Fulham Broadway, Earl's Court and West Kensington stations. The exact address is shared discreetly when you book, so everything is effortless from the moment you set off.</p>
 
-    <h2>In-Call and Outcall</h2>
-    <p>Chelsea (SW3, SW10) is within Anastasia's standard outcall coverage area. Travel supplement applies. The area's substantial housing stock — period conversions, garden flats, larger houses — typically provides appropriate space for a professional portable treatment setup.</p>
-    <p>For in-call, the Central London treatment room is accessible from Chelsea in 15-20 minutes by transport.</p>
+    <h2>Sensual Treatments for Chelsea Clients</h2>
+    <p>Indulge in sensual massage, body-to-body, tantric or the silky nuru experience, plus relaxing, aromatherapy, full body and hot stone massage. Sessions run unhurried at 30 minutes, a full hour, or a longer bespoke experience designed entirely around you.</p>
 
-    <h2>Evening Availability</h2>
-    <p>Chelsea professionals often have limited daytime flexibility but increasing availability from 18:00 onwards. Evening slots are available up to 22:00 daily, including weekends.</p>
+    <h2>Booking from Chelsea</h2>
+    <p>Weekend and evening appointments fill quickly with Chelsea clients — message ahead to secure your preferred time. A quick WhatsApp message is all it takes, and same-day visits are often possible.</p>
   `,
   faqs: [
     {
-      question: 'Do you offer massage in Chelsea, London?',
-      answer: 'Yes. Anastasia offers outcall massage to Chelsea (SW3, SW10) and in-call at the Central London treatment room. Available daily 11:00–22:00.',
+      question: 'Where do you see Chelsea clients?',
+      answer: 'At my private, discreet in-call studio in West Kensington (W14), a short journey from Chelsea. The exact address is shared once your booking is confirmed. Available daily 11:00–22:00.',
     },
     {
-      question: 'What is the best massage for Chelsea residents?',
-      answer: 'Deep tissue massage for desk work tension, sports massage for active residents, and Swedish/relaxation massage for stress management are most popular in this area.',
+      question: 'Which sensual massages can I book near Chelsea?',
+      answer: 'Sensual, body-to-body, tantric and nuru massage, plus relaxing, aromatherapy, full body and hot stone — as 30-minute, 1-hour or bespoke sessions.',
     },
     {
-      question: 'How do I book a massage in Chelsea?',
-      answer: 'Use the online booking form or message on WhatsApp. Include your Chelsea address when booking an outcall session.',
+      question: 'How do I book?',
+      answer: 'Message me on WhatsApp or call with the experience you would like and your preferred time. I will confirm discreetly, often the same day.',
     },
   ],
 }

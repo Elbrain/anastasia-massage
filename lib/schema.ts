@@ -9,7 +9,6 @@ export function localBusinessSchema() {
     description: siteConfig.description,
     url: siteConfig.url,
     telephone: siteConfig.phone,
-    email: siteConfig.email,
     image: `${siteConfig.url}/logo.png`,
     logo: `${siteConfig.url}/logo.png`,
     priceRange: '££',
@@ -17,8 +16,9 @@ export function localBusinessSchema() {
     paymentAccepted: 'Cash, Bank Transfer',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: siteConfig.address.city,
-      addressRegion: 'Greater London',
+      addressLocality: siteConfig.address.area,
+      addressRegion: 'London',
+      postalCode: siteConfig.address.postcode,
       addressCountry: siteConfig.address.country,
     },
     geo: {
@@ -69,7 +69,6 @@ export function localBusinessSchema() {
       'Soho',
       'London',
     ],
-    sameAs: [siteConfig.social.instagram, siteConfig.social.facebook],
   }
 }
 
@@ -99,7 +98,7 @@ export function blogPostingSchema({
     dateModified: dateModified ?? datePublished,
     author: {
       '@type': 'Person',
-      name: 'Anastasia',
+      name: 'Anna',
       url: siteConfig.url,
     },
     publisher: {

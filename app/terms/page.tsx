@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { buildMetadata } from '@/lib/metadata'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Terms & Conditions — Anastasia Massage Therapist London',
-  description: 'Terms and conditions for booking and using Anastasia Massage Therapist services in London.',
+  title: 'Terms & Conditions — Anna Massage Therapist London',
+  description: 'Terms and conditions for booking and using Anna Massage Therapist services in London.',
   path: '/terms',
 })
 
@@ -25,12 +25,12 @@ export default function TermsPage() {
 
           <div>
             <h2 className="font-display text-xl text-brown-dark mb-3">1. Service Provider</h2>
-            <p>These terms govern the use of massage therapy services provided by Anastasia, an independent certified massage therapist based in London, UK (&quot;the Therapist&quot;). By booking an appointment, you agree to these terms and conditions.</p>
+            <p>These terms govern the use of sensual massage services provided by Anna, an independent sensual massage therapist based in London, UK (&quot;the Therapist&quot;). By booking an appointment, you confirm that you are 18 or over and agree to these terms and conditions.</p>
           </div>
 
           <div>
             <h2 className="font-display text-xl text-brown-dark mb-3">2. Booking and Confirmation</h2>
-            <p>All bookings are requests until confirmed by the Therapist. Submitting a booking form does not guarantee an appointment. Confirmation is provided via phone, WhatsApp, or email. Payment terms and any deposit requirements will be communicated at the time of booking confirmation.</p>
+            <p>All bookings are requests until confirmed by the Therapist. Sending an enquiry does not guarantee an appointment. Confirmation is provided via phone or WhatsApp. Payment terms and any deposit requirements will be communicated at the time of booking confirmation.</p>
           </div>
 
           <div>
@@ -58,14 +58,14 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl text-brown-dark mb-3">5. Conduct</h2>
-            <p>All services are provided in a strictly professional therapeutic context. Any inappropriate behaviour, requests, or suggestions will result in the immediate termination of the session. No refund will be given in such circumstances. The Therapist reserves the right to refuse service to anyone.</p>
+            <h2 className="font-display text-xl text-brown-dark mb-3">5. Conduct &amp; Respect</h2>
+            <p>All sessions take place between consenting adults (18+) in an atmosphere of mutual respect, comfort and discretion. Personal boundaries are agreed and honoured at all times, and either party may pause or end the session at any point. Disrespectful, aggressive or intoxicated behaviour, or any attempt to record or photograph the session without consent, will result in immediate termination with no refund. Good personal hygiene is expected. The Therapist reserves the right to decline or end a booking at her discretion.</p>
           </div>
 
           <div>
-            <h2 className="font-display text-xl text-brown-dark mb-3">6. Outcall Appointments</h2>
-            <p>For outcall appointments, you are responsible for providing a safe, clean, and appropriate space for treatment. This includes a clear area of approximately 250cm × 200cm with adequate lighting and reasonable ambient temperature. The Therapist may decline to continue if the environment is deemed unsuitable or unsafe.</p>
-            <p className="mt-3">A travel supplement applies to all outcall appointments. The supplement is calculated based on the distance from the Central London treatment room and will be communicated at the time of booking.</p>
+            <h2 className="font-display text-xl text-brown-dark mb-3">6. In-call Appointments</h2>
+            <p>All appointments are in-call at the Therapist&apos;s private studio in West Kensington (W14). The exact address and directions are shared once a booking is confirmed. Please arrive freshly showered and on time; the session runs from the booked start time.</p>
+            <p className="mt-3">The studio is a private space — discretion and considerate, respectful conduct are expected at all times.</p>
           </div>
 
           <div>
@@ -80,7 +80,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="font-display text-xl text-brown-dark mb-3">9. Intellectual Property</h2>
-            <p>All content on this website — including text, images, and design — is the property of Anastasia Massage Therapist and may not be reproduced without permission.</p>
+            <p>All content on this website — including text, images, and design — is the property of Anna Massage Therapist and may not be reproduced without permission.</p>
           </div>
 
           <div>
@@ -90,13 +90,13 @@ export default function TermsPage() {
 
           <div>
             <h2 className="font-display text-xl text-brown-dark mb-3">11. Contact</h2>
-            <p>Questions about these terms should be directed to: <a href="mailto:hello@anastassiamassage.co.uk" className="text-rose hover:underline">hello@anastassiamassage.co.uk</a></p>
+            <p>Questions about these terms should be directed to us on <a href="https://wa.me/447768164518" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">WhatsApp</a>.</p>
           </div>
 
         </div>
 
         <div className="mt-12 pt-8 border-t border-rose/15">
-          <Link href="/" className="text-sm text-rose hover:text-rose-dark transition-colors">← Back to Home</Link>
+                    <Link href="/" className="text-sm text-rose hover:underline">← Back to Home</Link>
         </div>
       </div>
     </section>

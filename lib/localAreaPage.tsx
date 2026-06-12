@@ -17,8 +17,8 @@ export interface LocalAreaConfig {
 
 export function generateLocalMetadata(config: LocalAreaConfig) {
   return buildMetadata({
-    title: `Massage ${config.area} — Professional Massage Therapist`,
-    description: `Professional massage therapy in ${config.area}, London. Certified therapist Anastasia offers Swedish, deep tissue, sports, aromatherapy and more. In-call and outcall, daily 11:00–22:00.`,
+    title: `Sensual Massage ${config.area} — Anna`,
+    description: `Sensual massage near ${config.area}, London. Sensual, body-to-body, tantric and nuru massage with Anna at a discreet in-call studio in West Kensington (W14), easily reached from ${config.area}. Daily 11:00–22:00.`,
     path: `/${config.slug}`,
     keywords: config.keywords,
   })
@@ -54,7 +54,14 @@ export function LocalAreaPage({ config }: { config: LocalAreaConfig }) {
             </h1>
             <p className="text-lg text-brown leading-relaxed mb-8 max-w-xl">{config.intro}</p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/booking" className="btn-primary">Book Appointment</Link>
+              <a
+                href={`https://wa.me/${siteConfig.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Book on WhatsApp
+              </a>
               <Link href="/services" className="btn-secondary">View Services</Link>
             </div>
           </div>
@@ -75,9 +82,16 @@ export function LocalAreaPage({ config }: { config: LocalAreaConfig }) {
               <div className="sticky top-28 space-y-5">
                 {/* Booking CTA */}
                 <div className="bg-brown-dark rounded-3xl p-6 text-ivory">
-                  <h3 className="font-display text-xl text-ivory mb-3">Book in {config.area}</h3>
-                  <p className="text-ivory/60 text-sm mb-5 leading-relaxed">In-call (Central London) or outcall to {config.area}. Available daily 11:00–22:00.</p>
-                  <Link href="/booking" className="btn-rose w-full justify-center text-sm">Book Now</Link>
+                  <h3 className="font-display text-xl text-ivory mb-3">Massage near {config.area}</h3>
+                  <p className="text-ivory/60 text-sm mb-5 leading-relaxed">In-call studio in West Kensington (W14), easily reached from {config.area}. Available daily 11:00–22:00.</p>
+                  <a
+                    href={`https://wa.me/${siteConfig.whatsapp}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-rose w-full justify-center text-sm"
+                  >
+                    Book Now
+                  </a>
                 </div>
 
                 {/* Services */}
@@ -124,8 +138,8 @@ export function LocalAreaPage({ config }: { config: LocalAreaConfig }) {
             {config.faqs.map((faq, i) => (
               <AnimatedSection key={i} delay={(Math.min(i + 1, 5) as 1 | 2 | 3 | 4 | 5)}>
                 <div className="bg-ivory rounded-2xl border border-rose/15 p-6">
-                  <h3 className="font-display text-lg text-brown-dark mb-2">{faq.question}</h3>
-                  <p className="text-brown text-sm leading-relaxed">{faq.answer}</p>
+                  <h3 className="font-display text-lg text-brown-dark mb-3">{faq.question}</h3>
+                  <p className="text-sm text-brown leading-relaxed">{faq.answer}</p>
                 </div>
               </AnimatedSection>
             ))}

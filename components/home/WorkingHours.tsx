@@ -44,9 +44,9 @@ export function WorkingHours() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-body text-sm font-medium text-brown-dark">Treatment Room</p>
+                    <p className="font-body text-sm font-medium text-brown-dark">In-call Studio</p>
                     <p className="font-body text-sm text-brown-muted">
-                      Central London — available 3 days per week. Address shared upon booking.
+                      West Kensington (W14). Exact address shared once your booking is confirmed.
                     </p>
                   </div>
                 </div>
@@ -59,9 +59,9 @@ export function WorkingHours() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-body text-sm font-medium text-brown-dark">Outcall (Mobile)</p>
+                    <p className="font-body text-sm font-medium text-brown-dark">Easy to Reach</p>
                     <p className="font-body text-sm text-brown-muted">
-                      I come to your home or hotel. Covers Kensington, Chelsea, Westminster, Paddington, Mayfair and more.
+                      Moments from West Kensington &amp; Barons Court stations, with easy links across West London.
                     </p>
                   </div>
                 </div>

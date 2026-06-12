@@ -22,7 +22,7 @@ export function buildMetadata({
   const ogImage = image ?? `${siteConfig.url}/og-default.jpg`
 
   return {
-    title: `${title} | Anastasia — Massage Therapist London`,
+    title: `${title} | Anna — Massage Therapist London`,
     description,
     keywords: [
       'massage london',
@@ -30,8 +30,8 @@ export function buildMetadata({
       'professional massage london',
       ...keywords,
     ],
-    authors: [{ name: 'Anastasia', url: siteConfig.url }],
-    creator: 'Anastasia',
+    authors: [{ name: 'Anna', url: siteConfig.url }],
+    creator: 'Anna',
     metadataBase: new URL(siteConfig.url),
     alternates: {
       canonical: url,
@@ -39,7 +39,7 @@ export function buildMetadata({
     openGraph: {
       type: 'website',
       url,
-      title: `${title} | Anastasia — Massage Therapist London`,
+      title: `${title} | Anna — Massage Therapist London`,
       description,
       siteName: siteConfig.fullName,
       images: [
@@ -53,7 +53,7 @@ export function buildMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} | Anastasia — Massage Therapist London`,
+      title: `${title} | Anna — Massage Therapist London`,
       description,
       images: [ogImage],
     },
@@ -92,10 +92,10 @@ export function buildBlogMetadata({
   const ogImage = image ?? `${siteConfig.url}/og-default.jpg`
 
   return {
-    title: `${title} | Anastasia Massage London`,
+    title: `${title} | Anna Massage London`,
     description,
     keywords: ['massage london', ...keywords],
-    authors: [{ name: 'Anastasia', url: siteConfig.url }],
+    authors: [{ name: 'Anna', url: siteConfig.url }],
     metadataBase: new URL(siteConfig.url),
     alternates: { canonical: url },
     openGraph: {
@@ -105,7 +105,7 @@ export function buildBlogMetadata({
       description,
       siteName: siteConfig.fullName,
       publishedTime: datePublished,
-      authors: ['Anastasia'],
+      authors: ['Anna'],
       images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: {

@@ -4,45 +4,35 @@ import { LocalAreaPage, generateLocalMetadata, type LocalAreaConfig } from '@/li
 const config: LocalAreaConfig = {
   area: 'Central London',
   slug: 'massage-central-london',
-  postcodes: 'W1 · WC1 · WC2 · EC1 · SW1',
+  postcodes: 'W1 · WC2',
   intro:
-    'Professional massage therapy in Central London by certified therapist Anastasia. Treatment room located centrally — easily accessible from all major tube lines. In-call and outcall available daily 11:00–22:00.',
-  keywords: ['massage central london', 'massage therapist central london', 'massage therapy london w1', 'deep tissue massage central london', 'outcall massage central london'],
+    'Sensual massage for Central London with Anna — sensual, body-to-body, tantric and nuru massage at a private in-call studio in West Kensington (W14), a short ride from the West End, Mayfair and Soho. Discreet and unhurried, daily 11:00–22:00.',
+  keywords: ['sensual massage central london', 'tantric massage central london', 'nuru massage central london', 'erotic massage central london', 'body to body massage central london'],
   body: `
-    <h2>Central London Massage</h2>
-    <p>Central London is where London works. The concentration of offices, hotels, professional services firms, and long-hours cultures across W1, WC1, WC2, EC1, and SW1 creates a consistent and significant demand for quality therapeutic massage. Whether you work in the City, Soho, Covent Garden, Fitzrovia, or Mayfair — or are staying in one of Central London's many hotels — professional massage is available both as in-call at the treatment room and as outcall to your location.</p>
+    <h2>Sensual Massage for Central London</h2>
+    <p>If you live or work in the heart of the city — the West End, Mayfair, Soho or Fitzrovia (W1, WC2) — a sensual escape is only a short journey away. My private studio in West Kensington (W14) offers an unhurried, candlelit retreat just west of the centre.</p>
 
-    <h2>The Treatment Room</h2>
-    <p>Anastasia's Central London treatment room is the in-call option for clients who prefer a dedicated professional environment. A proper treatment room offers better equipment, a controlled atmosphere, and the kind of focused experience that isn't always replicable in a hotel room or home setting.</p>
-    <p>The room is accessible from most major Central London tube stations in under 15 minutes. Address available on booking confirmation.</p>
+    <h2>A Quick Trip from the Centre</h2>
+    <p>All sessions are in-call at my warm West Kensington studio, easily reached from Central London by tube or taxi. The exact address is shared discreetly once your booking is confirmed — perfect for slipping away from a busy day.</p>
 
-    <h2>Central London Hotels</h2>
-    <p>Central London has hundreds of hotels across every category. For hotel guests — whether on business or leisure travel — outcall massage to your room avoids the need to travel after a long day. The logistics are simple: a WhatsApp message or booking form submission, confirmation of the hotel and room number, and a start time.</p>
-    <p>The most common hotel massage requests are: evening relaxation after a business day (Swedish or relaxation massage, 60–90 minutes), travel recovery (60-minute therapeutic or aromatherapy), and morning sports massage for those who train before their schedule starts.</p>
+    <h2>Sensual Treatments for Central London Clients</h2>
+    <p>Choose sensual massage, body-to-body, tantric or the signature nuru experience, plus relaxing, aromatherapy, full body and hot stone massage. Sessions run unhurried at 30 minutes, a full hour, or a longer bespoke experience.</p>
 
-    <h2>The Central London Professional</h2>
-    <p>The physical demands of Central London professional life are well-documented. Extended desk work, long commutes, high-pressure environments, and irregular schedules create predictable patterns of muscular tension and disrupted sleep. Regular massage — fortnightly or monthly — is one of the most effective interventions for these patterns.</p>
-    <p>Deep tissue massage for the upper back, neck, and shoulders. Swedish massage for nervous system regulation. Evening sessions (18:00–21:00) that produce better sleep that same night. These are not luxury items — they are functional maintenance for anyone working at sustained professional intensity.</p>
-
-    <h2>Lunchtime and Evening Slots</h2>
-    <p>Central London's schedule means lunchtime slots (11:00–14:00) and evening slots (17:00–21:00) are most in demand. Same-week booking for midday weekday sessions is often possible. Evening and weekend slots are best booked 2–3 days in advance.</p>
+    <h2>Booking from Central London</h2>
+    <p>After-work and evening slots are in demand — a day's notice is wise. Send a quick WhatsApp message with your preferred time and I'll confirm discreetly, often the same day.</p>
   `,
   faqs: [
     {
-      question: 'Where is the Central London massage treatment room?',
-      answer: 'The treatment room address is confirmed on booking. It is accessible from major Central London tube stations in under 15 minutes. Available daily 11:00–22:00.',
+      question: 'Where do you see Central London clients?',
+      answer: 'At my private, discreet in-call studio in West Kensington (W14), a short ride from Central London. The exact address is shared once your booking is confirmed. Available daily 11:00–22:00.',
     },
     {
-      question: 'Can a massage therapist come to my Central London hotel?',
-      answer: 'Yes. Outcall to Central London hotels (W1, WC1, WC2, EC1, SW1) is available. Confirm hotel name and room on booking. Travel supplement applies.',
+      question: 'Which sensual massages can I book?',
+      answer: 'Sensual, body-to-body, tantric and nuru massage, plus relaxing, aromatherapy, full body and hot stone — as 30-minute, 1-hour or bespoke sessions.',
     },
     {
-      question: 'What is the best massage for someone working in Central London?',
-      answer: 'Deep tissue for desk work tension (upper back, neck, shoulders). Swedish or relaxation for stress management and improved sleep. Sports massage for those who train. 60 or 90 minutes depending on availability.',
-    },
-    {
-      question: 'Are lunchtime massage appointments available in Central London?',
-      answer: 'Yes. Weekday slots from 11:00 are available and are popular for Central London workers who have lunchtime flexibility. 60-minute sessions work well for a midday appointment.',
+      question: 'How do I book?',
+      answer: 'Message me on WhatsApp or call with the experience you would like and your preferred time. I will confirm discreetly, often the same day.',
     },
   ],
 }

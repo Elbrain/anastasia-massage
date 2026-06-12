@@ -11,16 +11,16 @@ import { faqSchema } from '@/lib/schema'
 import { siteConfig } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
-  title: 'Anastasia — Certified Massage Therapist London',
+  title: 'Anna — Sensual Massage London',
   description:
-    'Professional massage therapy in London by Anastasia. Swedish, deep tissue, sports, aromatherapy and more. Available daily 11:00–22:00. In-call and outcall.',
+    'Private sensual massage in West Kensington, London by Anna. Sensual, body-to-body, tantric and nuru massage in a warm, discreet in-call studio (W14). Daily 11:00–22:00.',
   alternates: {
     canonical: siteConfig.url,
   },
   openGraph: {
-    title: 'Anastasia — Certified Massage Therapist London',
+    title: 'Anna — Sensual Massage London',
     description:
-      'Private massage therapy in London. Book Swedish, deep tissue, sports or aromatherapy massage. Available 7 days a week.',
+      'Private sensual, tantric, nuru and body-to-body massage in London. Warm, discreet and unhurried. Available 7 days a week.',
     url: siteConfig.url,
     type: 'website',
   },
@@ -28,23 +28,23 @@ export const metadata: Metadata = {
 
 const homeFaqs = [
   {
-    question: 'What types of massage do you offer in London?',
+    question: 'What types of sensual massage do you offer in London?',
     answer:
-      'I offer Swedish, deep tissue, sports, aromatherapy, hot stone, therapeutic, relaxing, and full body massage in London. All treatments are available as in-call or outcall.',
+      'I offer sensual, body-to-body, tantric, nuru, full body, relaxing, aromatherapy and hot stone massage in London. Every session is unhurried and adapted to you, in a discreet in-call studio in West Kensington (W14).',
   },
   {
-    question: 'Are you available for same-day massage in London?',
+    question: 'Are you available for same-day appointments in London?',
     answer:
-      'Yes, same-day bookings are often available, particularly for weekday sessions. Evening and weekend slots fill up faster, so booking ahead is recommended for those.',
+      'Yes, same-day appointments are often available, particularly for weekday sessions. Evening and weekend slots fill up faster, so messaging ahead is recommended for those.',
   },
   {
-    question: 'Do you offer outcall massage in London?',
+    question: 'Where is your studio?',
     answer:
-      'Yes, I offer outcall massage across Central and West London, including Kensington, Chelsea, Westminster, Paddington, Mayfair, Notting Hill and surrounding areas.',
+      "My private in-call studio is in West Kensington (W14), easy to reach from Kensington, Chelsea, Hammersmith, Fulham, Earl's Court and across West London. The exact address is shared once your booking is confirmed.",
   },
   {
-    question: 'What are your working hours?',
-    answer: 'I work daily from 11:00 to 22:00, including weekends and bank holidays.',
+    question: 'Is everything discreet and private?',
+    answer: 'Completely. Every session is private and confidential — no reception, no records. I work daily from 11:00 to 22:00, including weekends.',
   },
 ]
 

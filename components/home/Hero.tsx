@@ -8,13 +8,13 @@ export function Hero() {
       {/* Background gradient blobs */}
       <div className="absolute inset-0 bg-hero-pattern" aria-hidden="true" />
       <div
-        className="absolute top-1/4 right-0 w-[700px] h-[700px] rounded-full opacity-25 blur-3xl"
-        style={{ background: 'radial-gradient(circle, #E6C7BC 0%, transparent 70%)' }}
+        className="absolute top-1/4 right-0 w-[700px] h-[700px] rounded-full opacity-30 blur-3xl"
+        style={{ background: 'radial-gradient(circle, #E4BEAE 0%, transparent 70%)' }}
         aria-hidden="true"
       />
       <div
-        className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-20 blur-3xl"
-        style={{ background: 'radial-gradient(circle, #A9AA95 0%, transparent 70%)' }}
+        className="absolute bottom-0 left-0 w-[460px] h-[460px] rounded-full opacity-25 blur-3xl"
+        style={{ background: 'radial-gradient(circle, #7B3540 0%, transparent 70%)' }}
         aria-hidden="true"
       />
 
@@ -27,15 +27,15 @@ export function Hero() {
             <div className="flex items-center gap-3 mb-8 animate-fade-in">
               <span className="block w-8 h-px bg-rose" />
               <span className="font-body text-xs tracking-[0.25em] uppercase text-brown-muted">
-                Certified Massage Therapist
+                Sensual Massage · London
               </span>
             </div>
 
             {/* Heading */}
             <h1 className="font-display text-display-xl text-brown-dark mb-6 leading-none">
-              <span className="block">Private Massage</span>
+              <span className="block">Private Sensual</span>
               <span className="block italic font-light" style={{ color: 'var(--rose-dark)' }}>
-                Therapy
+                Massage
               </span>
               <span className="block">in London</span>
             </h1>
@@ -54,15 +54,41 @@ export function Hero() {
 
             {/* Subtext */}
             <p className="font-body text-lg text-brown leading-relaxed mb-10 max-w-lg">
-              Swedish, deep tissue, sports, aromatherapy and more. Available daily
-              11:00–22:00 across Central London — in-call, outcall, and treatment room.
+              Sensual, body-to-body, tantric and nuru massage — slow, intimate and
+              entirely discreet. Available daily 11:00–22:00 at my private in-call
+              studio in West Kensington (W14).
             </p>
+            {/* MassageHub badge */}
+            <div className="mb-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <a href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya" target="_blank" rel="noopener" title="Featured on MassageHub.uk">
+                <img
+                  src="https://massagehub.uk/api/badge/sensual-massage-with-leya-in-west-london-leya?style=dark"
+                  alt="Featured on MassageHub.uk"
+                  width={200} height={61}
+                  style={{
+                    border: '0',
+                    borderRadius: '12px',
+                    opacity: 0.88,
+                    boxShadow: '0 4px 16px rgba(60,39,28,0.13)',
+                    transition: 'opacity 0.2s ease, transform 0.2s ease',
+                  }}
+                  onMouseOver={(e) => { (e.target as HTMLImageElement).style.opacity = '1'; (e.target as HTMLImageElement).style.transform = 'translateY(-1px)'; }}
+                  onMouseOut={(e) => { (e.target as HTMLImageElement).style.opacity = '0.88'; (e.target as HTMLImageElement).style.transform = 'translateY(0)'; }}
+                />
+              </a>
+            </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
-              <Link href="/booking" className="btn-primary text-base px-8 py-4">
-                Book Appointment
-              </Link>
+              <a
+                href={`https://wa.me/${siteConfig.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-base px-8 py-4"
+              >
+                Book on WhatsApp
+              </a>
               <Link href="/services" className="btn-secondary text-base px-8 py-4">
                 View Services
               </Link>
@@ -71,8 +97,8 @@ export function Hero() {
             {/* Trust badges */}
             <div className="flex flex-wrap gap-6 mt-12 pt-10 border-t border-rose/20">
               {[
-                { icon: '✦', label: 'Certified Therapist' },
-                { icon: '✦', label: 'In-call & Outcall' },
+                { icon: '✦', label: 'Discreet & Private' },
+                { icon: '✦', label: 'In-call · West Kensington' },
                 { icon: '✦', label: 'Daily 11:00–22:00' },
               ].map((badge) => (
                 <div key={badge.label} className="flex items-center gap-2">
@@ -86,28 +112,28 @@ export function Hero() {
           </div>
 
           {/* ── Right: oval portrait ── */}
-          <div className="hidden lg:flex justify-center items-center relative">
-            {/* Outer decorative ring */}
+          <div className="flex justify-center items-center relative py-8 lg:py-0">
+            {/* Outer decorative ring — desktop only */}
             <div
-              className="absolute w-[420px] h-[540px] border border-rose/25 rounded-[50%] rotate-6"
+              className="hidden lg:block absolute w-[420px] h-[540px] border border-rose/25 rounded-[50%] rotate-6"
               aria-hidden="true"
             />
             <div
-              className="absolute w-[400px] h-[520px] border border-rose/15 rounded-[50%] -rotate-3"
+              className="hidden lg:block absolute w-[400px] h-[520px] border border-rose/15 rounded-[50%] -rotate-3"
               aria-hidden="true"
             />
 
             {/* Oval image frame */}
             <div
-              className="relative w-[380px] h-[500px] overflow-hidden shadow-2xl"
+              className="relative overflow-hidden shadow-2xl w-[260px] h-[340px] lg:w-[380px] lg:h-[500px]"
               style={{ borderRadius: '50%' }}
             >
               <Image
                 src="/images/anastasia-hero.jpg"
-                alt="Anastasia — certified massage therapist in London"
+                alt="Anna — sensual massage therapist in London"
                 fill
                 priority
-                sizes="380px"
+                sizes="(max-width: 1024px) 260px, 380px"
                 className="object-cover"
                 style={{ objectPosition: '50% 15%' }}
               />
@@ -119,15 +145,15 @@ export function Hero() {
             </div>
 
             {/* Floating badge — experience */}
-            <div className="absolute bottom-10 -left-4 bg-ivory border border-rose/20 rounded-2xl px-5 py-3 shadow-soft">
-              <p className="font-display text-2xl text-brown-dark leading-none">5★</p>
+            <div className="absolute bottom-4 lg:bottom-10 -left-2 lg:-left-4 bg-ivory border border-rose/20 rounded-2xl px-4 py-2 lg:px-5 lg:py-3 shadow-soft">
+              <p className="font-display text-xl lg:text-2xl text-brown-dark leading-none">5★</p>
               <p className="font-body text-[10px] tracking-[0.15em] uppercase text-brown-muted mt-1">
                 Rated London
               </p>
             </div>
 
             {/* Floating badge — availability */}
-            <div className="absolute top-12 -right-2 bg-brown-dark rounded-2xl px-5 py-3 shadow-soft">
+            <div className="absolute top-6 lg:top-12 -right-2 bg-brown-dark rounded-2xl px-4 py-2 lg:px-5 lg:py-3 shadow-soft">
               <p className="font-body text-[10px] tracking-[0.15em] uppercase text-ivory/60 mb-0.5">Available</p>
               <p className="font-display text-sm text-ivory">Daily · 11–22</p>
             </div>

@@ -3,7 +3,7 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection'
 const reasons = [
   {
     title: 'Genuinely Personalised',
-    body: "Every session begins with a conversation. I ask about your body, your stress levels, and what you need that day — then adapt my approach accordingly. You'll never receive a one-size-fits-all treatment.",
+    body: "Every session begins with a conversation about what you want and the mood you're in — then I let the experience unfold at your pace. Nothing rushed, nothing scripted, never one-size-fits-all.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
@@ -12,8 +12,8 @@ const reasons = [
     ),
   },
   {
-    title: 'Certified & Insured',
-    body: "I hold professional certification in massage therapy and maintain full professional indemnity insurance. You can relax knowing you're in qualified, covered hands.",
+    title: 'Completely Discreet',
+    body: "Total privacy and confidentiality, always. No reception, no records, no questions — just a calm, judgement-free space where you can fully relax and be yourself.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -22,7 +22,7 @@ const reasons = [
   },
   {
     title: 'Flexible Booking',
-    body: "Available daily from 11:00 to 22:00, including weekends. I offer in-call at my Central London treatment room, or I come to you across the city — whatever suits your schedule.",
+    body: "Available daily from 11:00 to 22:00, including weekends, at my private in-call studio in West Kensington — book whenever suits you best.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
         <circle cx="12" cy="12" r="10"/>
@@ -41,8 +41,8 @@ const reasons = [
     ),
   },
   {
-    title: 'Results You Feel',
-    body: "I measure my success by how you feel when you leave. Whether that's a specific pain point resolved, a knot finally released, or simply the deepest sleep you've had in months.",
+    title: 'An Unhurried Ritual',
+    body: "I measure success by how you feel when you leave — relaxed, unwound, and glowing. Every session is given the time it deserves; you'll never feel rushed off the table.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
@@ -50,8 +50,8 @@ const reasons = [
     ),
   },
   {
-    title: 'Across Central London',
-    body: "My treatment room is in Central London, and outcall covers Kensington, Chelsea, Mayfair, Westminster, Paddington, Notting Hill, and the surrounding areas.",
+    title: 'West Kensington Studio',
+    body: "My private in-call studio is in West Kensington (W14), easily reached from Kensington, Chelsea, Hammersmith, Fulham, Earl's Court and across West London.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
@@ -86,8 +86,8 @@ export function WhyChoose() {
             <span className="italic font-light text-rose-light">Therapist Makes</span>
           </h2>
           <p className="text-ivory/60 leading-relaxed">
-            In a city full of chain spas and walk-in clinics, I offer something
-            different: attentive, skilled, one-to-one care.
+            In a city full of rushed, clinical massages, I offer something
+            different: warm, sensual, one-to-one attention in complete privacy.
           </p>
         </AnimatedSection>
 

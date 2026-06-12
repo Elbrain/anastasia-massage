@@ -4,40 +4,35 @@ import { LocalAreaPage, generateLocalMetadata, type LocalAreaConfig } from '@/li
 const config: LocalAreaConfig = {
   area: 'Near Hyde Park',
   slug: 'massage-near-hyde-park',
-  postcodes: 'W2 · W8 · SW1 · SW7',
+  postcodes: 'W2 · W1',
   intro:
-    'Professional massage therapy near Hyde Park by certified therapist Anastasia. Serving Bayswater, Knightsbridge, Kensington, and Hyde Park Corner. In-call and outcall available daily 11:00–22:00.',
-  keywords: ['massage near hyde park', 'massage hyde park london', 'massage knightsbridge', 'massage bayswater', 'massage therapist hyde park london'],
+    'Sensual massage near Hyde Park with Anna — sensual, body-to-body, tantric and nuru massage at a private in-call studio in West Kensington (W14), an easy journey from the Hyde Park area (Bayswater, Lancaster Gate, Knightsbridge). Discreet and unhurried, daily 11:00–22:00.',
+  keywords: ['sensual massage hyde park', 'sensual massage bayswater', 'tantric massage hyde park', 'nuru massage hyde park', 'erotic massage hyde park'],
   body: `
-    <h2>Massage Near Hyde Park</h2>
-    <p>The area around Hyde Park — Bayswater to the north, Kensington to the west, Knightsbridge to the south, and Marble Arch and Hyde Park Corner on the eastern approaches — is one of London's most densely served areas for visitors, hotel guests, and residential professionals. Massage therapy is available throughout this area, both as outcall to homes and hotels and as in-call at the Central London treatment room.</p>
+    <h2>Sensual Massage Near Hyde Park</h2>
+    <p>The streets around Hyde Park — Bayswater, Lancaster Gate, Paddington and the edge of Knightsbridge (W2, W1) — are some of London's most elegant. My private studio in West Kensington (W14) is a short journey away, offering a sensual retreat whenever you need to unwind.</p>
 
-    <h2>Post-Exercise Recovery</h2>
-    <p>Hyde Park is one of London's most popular running and cycling locations. The 5km Serpentine loop, the longer Ring Road circuit, and the open grass areas draw thousands of regular exercisers. For those who train in Hyde Park, sports massage and post-exercise recovery massage are natural complements to a regular training routine.</p>
-    <p>A 60-minute sports massage in the evening after a Hyde Park session accelerates recovery, reduces next-day soreness, addresses specific muscular tension (often calves, hamstrings, IT band, and lower back for runners), and maintains the flexibility and tissue quality that sustains long-term training.</p>
+    <h2>A Short Journey from Hyde Park</h2>
+    <p>All sessions are in-call at my warm, candlelit West Kensington studio, easily reached from the Hyde Park area by tube or taxi. The exact address is shared discreetly once your booking is confirmed.</p>
 
-    <h2>Knightsbridge and Bayswater Hotels</h2>
-    <p>The W2 and SW1/SW3/SW7 areas adjacent to Hyde Park have a high concentration of hotels — from large international chains to boutique properties. For hotel guests, outcall massage to your room is available across this area.</p>
-    <p>Common requests include: arrival recovery massage for guests who have been travelling, evening relaxation after a day of meetings or sightseeing, and morning sports massage for guests who trained in Hyde Park.</p>
+    <h2>Sensual Treatments to Enjoy</h2>
+    <p>Choose sensual massage, body-to-body, tantric or the silky nuru experience, plus relaxing, aromatherapy, full body and hot stone massage — unhurried, as a 30-minute taster, a full hour, or a longer bespoke experience.</p>
 
-    <h2>Residential Areas Around the Park</h2>
-    <p>The residential streets around Hyde Park — particularly in Bayswater (W2), Kensington (W8), and the Knightsbridge/Hyde Park area of SW1 — have a well-established market for professional therapeutic massage. Outcall to these addresses is within the standard coverage area.</p>
-
-    <h2>Access to the Treatment Room</h2>
-    <p>The Central London treatment room is accessible from the Hyde Park area in 10–15 minutes via multiple tube lines. Queensway, Bayswater, Knightsbridge, and Hyde Park Corner stations all provide good access to Central London.</p>
+    <h2>Booking Near Hyde Park</h2>
+    <p>Popular with both locals and visitors staying nearby — same-day appointments are often available. A quick WhatsApp message is all it takes.</p>
   `,
   faqs: [
     {
-      question: 'Is there a massage therapist near Hyde Park?',
-      answer: 'Yes. Anastasia covers the Hyde Park area for outcall — including Bayswater (W2), Kensington (W8), and Knightsbridge (SW1). In-call at Central London treatment room also available. Daily 11:00–22:00.',
+      question: 'Where do you see clients near Hyde Park?',
+      answer: "At my private, discreet in-call studio in West Kensington (W14), a short journey from the Hyde Park area. The exact address is shared once your booking is confirmed. Available daily 11:00–22:00.",
     },
     {
-      question: 'Do you offer sports massage near Hyde Park?',
-      answer: 'Yes. Sports and post-run recovery massage is available as outcall to addresses near Hyde Park, and as in-call at the Central London treatment room. Popular with runners and cyclists who train in the park.',
+      question: 'Which sensual massages can I book?',
+      answer: "Sensual, body-to-body, tantric and nuru massage, plus relaxing, aromatherapy, full body and hot stone — as 30-minute, 1-hour or bespoke sessions.",
     },
     {
-      question: 'Can I get a massage in my hotel near Hyde Park?',
-      answer: 'Yes. Hotel outcall is available across Bayswater, Knightsbridge, and Kensington. Confirm hotel name and room on booking. Travel supplement applies.',
+      question: 'Do you see hotel guests near Hyde Park?',
+      answer: "Yes — many clients visit while staying nearby. Message me on WhatsApp with your preferred time and I'll confirm discreetly, often the same day.",
     },
   ],
 }

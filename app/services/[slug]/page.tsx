@@ -24,6 +24,206 @@ interface ServiceDetail {
 }
 
 const serviceDetails: Record<string, ServiceDetail> = {
+  'sensual-massage': {
+    slug: 'sensual-massage',
+    name: 'Sensual Massage',
+    tagline: 'Slow, full-body relaxation for the senses',
+    description: 'Sensual massage is a slow, full-body treatment with warm oil and unhurried, flowing strokes — designed to quiet the mind, awaken the senses, and melt away tension in a calm, candlelit setting.',
+    duration: '30 / 60 min',
+    price: 'From £80',
+    intro: 'Sensual massage is about slowing right down. With warm oil and long, flowing, full-body strokes, the experience gently awakens the senses while quieting a busy mind. There is no rush and no script — we begin softly, your breathing settles, and the day simply falls away.',
+    body: `
+      <h2>What Is Sensual Massage?</h2>
+      <p>Sensual massage is a full-body treatment that places relaxation and the senses at its heart. Where a clinical massage focuses on specific muscles, a sensual massage flows across the whole body in slow, continuous strokes. Warm oil, soft lighting, and an unhurried pace combine to create an experience that feels less like a treatment and more like a deeply relaxing escape.</p>
+
+      <h2>What to Expect</h2>
+      <p>Your session begins with a warm welcome and a moment to settle. The room is candlelit and warm, the oils heated, and the pace is entirely yours. I start gently and build slowly, using long, flowing strokes designed to relax the whole body and heighten your awareness of each sensation. You remain in control throughout — this is your time, and nothing is rushed.</p>
+
+      <h2>Discretion &amp; Comfort</h2>
+      <p>Privacy is paramount. Sessions are completely discreet and confidential, in a clean, comfortable in-call studio in West Kensington (W14). All you need to do is arrive freshly showered, relax, and let go.</p>
+    `,
+    benefits: [
+      'Deep, full-body relaxation',
+      'Relief from everyday stress and tension',
+      'Heightened awareness of the body',
+      'A calm, unhurried escape',
+      'Improved mood and sense of wellbeing',
+      'Complete privacy and discretion',
+    ],
+    whoFor: [
+      'Anyone new to sensual massage',
+      'Those wanting to switch off and unwind',
+      'People carrying stress and tension',
+      'Anyone seeking slow, sensual relaxation',
+    ],
+    faqs: [
+      {
+        question: 'What happens during a sensual massage?',
+        answer: 'A sensual massage is a slow, warm-oil, full-body treatment focused on relaxation and the senses. We begin gently and unhurried, in a calm, candlelit setting. You stay comfortable and in control throughout.',
+      },
+      {
+        question: 'Is it discreet?',
+        answer: 'Completely. Every session is private and confidential — no reception, no records. It takes place in a clean, comfortable in-call studio in West Kensington (W14).',
+      },
+      {
+        question: 'How long should my first session be?',
+        answer: '30 minutes is a lovely taster, while an hour gives the experience room to fully unfold. For something longer or completely bespoke, just ask — I am always happy to arrange it.',
+      },
+    ],
+    keywords: ['sensual massage london', 'sensual massage near me', 'erotic massage london', 'sensual full body massage london'],
+    relatedSlugs: ['body-to-body-massage', 'tantric-massage', 'nuru-massage'],
+  },
+
+  'body-to-body-massage': {
+    slug: 'body-to-body-massage',
+    name: 'Body to Body Massage',
+    tagline: 'Intimate, skin-on-skin connection',
+    description: 'Body to body massage uses the whole body — not just the hands — to apply warm, gliding pressure, creating an intimate, immersive and deeply relaxing experience.',
+    duration: '30 / 60 min',
+    price: 'From £100',
+    intro: 'Body to body massage is one of the most intimate experiences on the menu. Rather than the hands alone, the whole body is used to apply warm, gliding pressure — a closeness and connection that hands simply cannot replicate. Every movement is slow, deliberate and beautifully relaxing.',
+    body: `
+      <h2>What Is Body to Body Massage?</h2>
+      <p>Body to body massage is a sensual technique in which the therapist uses their entire body — gliding over yours with warm oil — to deliver the massage. The result is full, continuous contact that feels enveloping and immersive. It is as much about connection and presence as it is about touch.</p>
+
+      <h2>What to Expect</h2>
+      <p>After a warm welcome, the session begins with you lying comfortably as warm oil is applied. The massage builds slowly, moving from traditional strokes into flowing, full-body contact. The pace is unhurried and entirely led by your comfort. Many clients describe it as the most relaxing and grounding experience they have had.</p>
+
+      <h2>Discretion &amp; Comfort</h2>
+      <p>Sessions are private, clean and completely confidential at my in-call studio in West Kensington (W14). Arrive freshly showered and ready to relax — everything else is taken care of.</p>
+    `,
+    benefits: [
+      'A profound sense of closeness and connection',
+      'Full-body, immersive relaxation',
+      'Melts away tension and stress',
+      'Warm, enveloping contact',
+      'Deeply grounding and calming',
+      'Private and discreet throughout',
+    ],
+    whoFor: [
+      'Those wanting a closer, more intimate experience',
+      'Anyone who finds traditional massage too clinical',
+      'People seeking deep relaxation and connection',
+      'Those curious about sensual bodywork',
+    ],
+    faqs: [
+      {
+        question: 'How is body to body massage different from a normal massage?',
+        answer: 'Instead of using only the hands, the whole body is used to apply warm, gliding pressure. This creates a much closer, more immersive and continuous sensation than a traditional massage.',
+      },
+      {
+        question: 'What should I do to prepare?',
+        answer: 'Simply arrive freshly showered and relaxed. The room, oils and everything else are ready for you.',
+      },
+      {
+        question: 'Where does the massage take place?',
+        answer: 'At my private, discreet in-call studio in West Kensington (W14). The exact address is shared once your booking is confirmed.',
+      },
+    ],
+    keywords: ['body to body massage london', 'b2b massage london', 'body to body massage near me', 'sensual body to body london'],
+    relatedSlugs: ['nuru-massage', 'sensual-massage', 'tantric-massage'],
+  },
+
+  'tantric-massage': {
+    slug: 'tantric-massage',
+    name: 'Tantric Massage',
+    tagline: 'A slow, breath-led full-body ritual',
+    description: 'Tantric massage is a slow, mindful full-body ritual rooted in ancient tantra. Guided by breath and presence, it builds and channels energy across the whole body for deep relaxation and heightened sensation.',
+    duration: '30 / 60 min',
+    price: 'From £100',
+    intro: 'Tantric massage is far more than a massage — it is a meditative journey. Guided by breath and presence, the treatment works with the whole body to build, move and channel energy, creating waves of relaxation and heightened awareness that leave you feeling present, alive and beautifully relaxed.',
+    body: `
+      <h2>What Is Tantric Massage?</h2>
+      <p>Tantric massage draws on the ancient practice of tantra, where breath, energy and presence are as important as touch. Rather than rushing toward a goal, a tantric massage slows everything down. Through conscious breathing and slow, full-body strokes, energy is invited to build and move through the body — producing a deeply relaxed, almost meditative state.</p>
+
+      <h2>What to Expect</h2>
+      <p>We begin with a few quiet moments and some gentle breathing to help you arrive and settle. The massage itself is slow and flowing, working across the whole body without rushing. There is a strong emphasis on presence — being here, now, in your body. Because the experience unfolds gradually, tantric massage is best enjoyed unhurried — an hour, or a longer bespoke session if you would like.</p>
+
+      <h2>Discretion &amp; Comfort</h2>
+      <p>Every session is private, unhurried and completely confidential. Tantric massage is suitable whether you are experienced or entirely new to it — no prior knowledge is needed, only an openness to slow down.</p>
+    `,
+    benefits: [
+      'Deep presence and relaxation',
+      'Breath-led, full-body energy',
+      'Heightened sensation and awareness',
+      'A meditative, restorative experience',
+      'Release of deep-held tension',
+      'Suitable for beginners and the experienced',
+    ],
+    whoFor: [
+      'Those drawn to a slower, more spiritual experience',
+      'Anyone curious about tantra and breathwork',
+      'People wanting full-body, mindful relaxation',
+      'Those who enjoy unhurried, immersive sessions',
+    ],
+    faqs: [
+      {
+        question: 'Do I need any experience with tantra?',
+        answer: 'Not at all. Tantric massage is welcoming to complete beginners — I will gently guide the breathing and the pace. All you need is an openness to slow down and be present.',
+      },
+      {
+        question: 'How long should a tantric session be?',
+        answer: 'Tantra is all about unhurried presence, so the more time the better. An hour is ideal, and longer bespoke sessions can be arranged if you would like the experience to unfold more slowly.',
+      },
+      {
+        question: 'Is tantric massage relaxing or energising?',
+        answer: 'Both. Many people feel deeply relaxed and calm afterwards, while also feeling pleasantly alive and present — a uniquely restorative combination.',
+      },
+    ],
+    keywords: ['tantric massage london', 'tantra massage london', 'tantric massage near me', 'tantric massage therapist london'],
+    relatedSlugs: ['sensual-massage', 'body-to-body-massage', 'nuru-massage'],
+  },
+
+  'nuru-massage': {
+    slug: 'nuru-massage',
+    name: 'Nuru Massage',
+    tagline: 'The ultimate body-to-body experience',
+    description: 'Nuru massage is the signature body-to-body experience, using a silky, odourless gel made from seaweed for an incredibly smooth, gliding sensation across the whole body.',
+    duration: '30 / 60 min',
+    price: 'From £100',
+    intro: 'Nuru is the ultimate body-to-body experience. Originating in Japan, it uses a special odourless, colourless gel that becomes incredibly silky and slippery when warmed — creating an unbelievably smooth, gliding sensation as the whole body glides over yours. Warm, slippery and utterly indulgent.',
+    body: `
+      <h2>What Is Nuru Massage?</h2>
+      <p>Nuru massage originated in Japan, where "nuru" means "slippery". It uses a special gel made from nori seaweed — completely odourless and colourless — that turns wonderfully silky and slippery when warmed. Combined with a body-to-body technique, the gel allows the whole body to glide effortlessly over yours, producing a sensation unlike any other massage.</p>
+
+      <h2>What to Expect</h2>
+      <p>The warmed gel is applied generously, and the massage flows from gentle, traditional strokes into smooth, full-body contact. The signature feeling of a nuru massage is the incredibly slippery, gliding sensation — immersive, warm and deeply relaxing. The gel itself is also lovely for the skin, washing away cleanly afterwards.</p>
+
+      <h2>Discretion &amp; Comfort</h2>
+      <p>Nuru sessions are private and discreet, with everything provided at my in-call studio in West Kensington (W14). Arrive freshly showered, relax, and enjoy a truly one-of-a-kind experience.</p>
+    `,
+    benefits: [
+      'An incredibly smooth, gliding sensation',
+      'The most immersive body-to-body experience',
+      'Skin-softening Nuru gel',
+      'Warm, slippery and indulgent',
+      'Deeply relaxing and unforgettable',
+      'Completely private and discreet',
+    ],
+    whoFor: [
+      'Those wanting the most immersive sensual experience',
+      'Anyone who has enjoyed body to body and wants more',
+      'People curious about this unique Japanese technique',
+      'Those seeking something truly indulgent',
+    ],
+    faqs: [
+      {
+        question: 'What is Nuru gel made of?',
+        answer: 'Nuru gel is made from nori seaweed. It is odourless, colourless and very gentle on the skin — becoming beautifully silky and slippery when warmed, which creates the signature gliding sensation.',
+      },
+      {
+        question: 'Is nuru massage messy?',
+        answer: 'The gel is used generously, so the experience is wonderfully slippery — but it washes away cleanly with water and leaves no residue or scent. Everything is provided and taken care of.',
+      },
+      {
+        question: 'Where does a nuru massage take place?',
+        answer: 'At my private in-call studio in West Kensington (W14), which is fully set up for it. The exact address is shared when you book.',
+      },
+    ],
+    keywords: ['nuru massage london', 'nuru massage near me', 'japanese nuru massage london', 'nuru gel massage london'],
+    relatedSlugs: ['body-to-body-massage', 'sensual-massage', 'tantric-massage'],
+  },
+
   'swedish-massage': {
     slug: 'swedish-massage',
     name: 'Swedish Massage',
@@ -250,8 +450,8 @@ const serviceDetails: Record<string, ServiceDetail> = {
     name: 'Hot Stone Massage',
     tagline: 'Deep warmth and muscular release',
     description: 'Hot stone massage uses smooth, heated basalt stones to warm the deep muscle tissue — allowing tensions to release more fully than with hands alone, and creating a uniquely comforting and grounding experience.',
-    duration: '90 / 120 min',
-    price: 'From £100',
+    duration: '60 min',
+    price: 'From £130',
     intro: 'Hot stone massage uses smooth basalt stones, heated to approximately 55°C, to work the muscles alongside the therapist\'s hands. The heat penetrates deeply into the muscle tissue, allowing it to release more fully and with less pressure than cold hands alone could achieve.',
     body: `
       <h2>What Is Hot Stone Massage?</h2>
@@ -397,68 +597,73 @@ const serviceDetails: Record<string, ServiceDetail> = {
       },
       {
         question: 'Can I fall asleep during a relaxing massage?',
-        answer: 'Yes, and many clients do. This is not an inconvenience — it is an indication that the session is doing precisely what it is meant to do. The treatment continues as normal.',
+        answer: 'Absolutely — falling asleep is a sign that the nervous system has fully let go, which is exactly the goal. Many clients drift off mid-session, particularly during evening appointments. The session continues at the same pace until the end.',
       },
     ],
-    keywords: ['relaxing massage london', 'relaxation massage london', 'calming massage london', 'soothing massage london'],
+    keywords: ['relaxing massage london', 'relaxation massage london', 'full body relaxing massage london', 'calming massage london'],
     relatedSlugs: ['swedish-massage', 'aromatherapy-massage', 'hot-stone-massage'],
   },
 
   'full-body-massage': {
     slug: 'full-body-massage',
     name: 'Full Body Massage',
-    tagline: 'Complete coverage from head to toe',
-    description: 'A comprehensive full body massage covering all muscle groups — back, legs, arms, neck, and chest — for a complete physical reset and the most thorough relaxation experience available.',
-    duration: '90 / 120 min',
-    price: 'From £90',
-    intro: 'A full body massage is exactly what it describes: comprehensive coverage of all major muscle groups in a single session. Back, shoulders, neck, legs, arms, hands, feet, and chest — the complete circuit of the body\'s musculature, addressed without omission.',
+    tagline: 'Head to toe — the complete experience',
+    description: 'A full body massage covers every area from shoulders to feet in one complete, flowing session — combining relaxation and therapeutic techniques for a thorough treatment that leaves the whole body feeling cared for.',
+    duration: '60 min',
+    price: 'From £130',
+    intro: 'A full body massage is exactly what it sounds like: a complete, unrushed treatment that covers every area from the scalp to the feet. No area is left behind, no part of the body neglected. For many clients, it is the most satisfying treatment on the menu — because it addresses everything at once.',
     body: `
       <h2>What Is a Full Body Massage?</h2>
-      <p>A full body massage covers all major muscle groups in a single session. Most standard massages focus primarily on the back and shoulders — because that is where the most acute tension lives for most clients. A full body massage extends that work to include the legs (hamstrings, quadriceps, calves), the arms and hands, the chest and pectorals, and the feet.</p>
-      <p>The result is a more complete physical reset than any focused treatment can provide. The body is interconnected — lower back tension often relates to tight hamstrings and hip flexors; neck tension to pectoral tightness; lower leg fatigue to gluteal holding patterns. A full body treatment addresses these connections rather than treating each area in isolation.</p>
+      <p>A full body massage covers the complete body — back, shoulders, neck, arms, hands, legs, feet, and often the face and scalp — in one flowing session. Rather than focusing on a specific complaint or area, the aim is comprehensive coverage: every muscle group receives attention, every joint is moved through its range, and the body emerges from the session feeling genuinely, thoroughly cared for.</p>
+      <p>The techniques used vary according to what each area needs. The back and shoulders typically receive deeper, more thorough work. The legs and arms benefit from long effleurage strokes. The feet and hands receive focused attention. The neck and scalp are treated last, as clients are often in a deeply relaxed state by that point.</p>
 
-      <h2>Duration</h2>
-      <p>A full body massage requires a minimum of 90 minutes to cover the full circuit with appropriate thoroughness. 120 minutes is the optimal duration — allowing real depth of work on each area, time for transition between zones, and a pace that is genuinely relaxing rather than rushed.</p>
-      <p>The 120-minute full body massage is the most indulgent option in the treatment menu and the one most frequently requested for special occasions — a birthday, anniversary, or a deliberate act of self-care after a particularly demanding period.</p>
+      <h2>Duration and Depth</h2>
+      <p>A full body massage requires a minimum of 60 minutes to cover the whole body with appropriate depth. In 60 minutes, each area receives a thorough but time-efficient treatment. 90 minutes allows for greater depth and more time on priority areas. 120 minutes is the most complete option — full body coverage with extended work wherever it is most needed, and time to go slowly.</p>
 
-      <h2>Technique</h2>
-      <p>The technique within a full body session is tailored to your preference and the needs of each area. Upper back and shoulders typically receive deeper, more thorough work. Legs and arms may be done with a lighter, more flowing Swedish approach. Specific problem areas can receive additional time — within the session structure, the order and depth of each zone is adjusted to what you need.</p>
+      <h2>When to Choose a Full Body Massage</h2>
+      <p>A full body massage is the right choice when you want comprehensive coverage rather than targeted work on one area, when you have not had a massage in some time and want a thorough reset, when you are treating yourself and want the most complete experience, or when you are unsure where to start and would like to experience the full range of massage therapy.</p>
     `,
     benefits: [
-      'Complete physical reset — no area left unaddressed',
-      'Addresses whole-body tension patterns and connections',
-      'The most thorough relaxation experience available',
-      'Improved circulation throughout the entire body',
-      'Leaves the body feeling genuinely and completely worked',
-      'Best value per body area of any treatment type',
+      'Complete head-to-toe coverage',
+      'Thorough muscular and nervous system reset',
+      'Improved circulation throughout the body',
+      'Deep relaxation and stress relief',
+      'The most comprehensive treatment available',
+      'Leaves the body feeling entirely cared for',
     ],
     whoFor: [
-      'Those who want a thorough, complete treatment',
-      'Anyone carrying tension in multiple areas',
-      'Those treating themselves for a special occasion',
-      'Clients who want the most comprehensive session possible',
-      'Those who have never had a truly full body treatment',
+      'Those wanting a complete, unrushed treatment',
+      'Anyone overdue a thorough massage',
+      'Those treating themselves to something special',
+      'First-timers who want to experience everything',
+      'Regular clients wanting a comprehensive session',
     ],
     faqs: [
       {
-        question: 'What exactly is included in a full body massage?',
-        answer: 'Back, shoulders, neck, lower back, buttocks (through sheet), legs (front and back), feet, arms, hands, and chest/décolletage. Face and scalp can be included in 120-minute sessions on request.',
+        question: 'What does a full body massage include?',
+        answer: 'Back, shoulders, neck, arms, hands, legs, feet — and optionally the face and scalp. Every area of the body receives attention in one flowing session. Nothing is skipped.',
       },
       {
-        question: 'Is 90 minutes enough for a full body massage?',
-        answer: '90 minutes is sufficient for a thorough full body treatment at a comfortable pace. 120 minutes allows additional depth in each area and a more unhurried experience — the preferred option if time allows.',
+        question: 'How long does a full body massage take?',
+        answer: "A minimum of 60 minutes is needed to do justice to the whole body. 90 minutes allows greater depth throughout. 120 minutes is the most thorough and unhurried version — highly recommended if you haven't been massaged in a while.",
       },
       {
-        question: 'How often should I have a full body massage?',
-        answer: 'Monthly full body sessions work well as a maintenance schedule. Some clients book a full body treatment quarterly and use shorter focused sessions in between.',
+        question: 'What is the difference between a full body massage and a Swedish massage?',
+        answer: 'Swedish massage is a technique. Full body massage refers to the coverage. A full body massage typically uses Swedish techniques, but the emphasis is on completeness — ensuring every area is addressed, not just the back and legs.',
       },
     ],
-    keywords: ['full body massage london', 'full body massage therapist london', 'whole body massage london', 'complete body massage london'],
-    relatedSlugs: ['swedish-massage', 'deep-tissue-massage', 'hot-stone-massage'],
+    keywords: ['full body massage london', 'full body massage therapist london', 'head to toe massage london', 'complete massage london'],
+    relatedSlugs: ['swedish-massage', 'relaxing-massage', 'hot-stone-massage'],
   },
 }
 
-export function generateStaticParams() {
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+
+function getService(slug: string): ServiceDetail | undefined {
+  return serviceDetails[slug]
+}
+
+export async function generateStaticParams() {
   return Object.keys(serviceDetails).map((slug) => ({ slug }))
 }
 
@@ -467,24 +672,22 @@ export async function generateMetadata({
 }: {
   params: { slug: string }
 }): Promise<Metadata> {
-  const service = serviceDetails[params.slug]
+  const service = getService(params.slug)
   if (!service) return {}
 
   return buildMetadata({
-    title: `${service.name} London — ${service.tagline}`,
+    title: `${service.name} in London`,
     description: service.description,
     path: `/services/${service.slug}`,
     keywords: service.keywords,
   })
 }
 
-export default function ServiceDetailPage({ params }: { params: { slug: string } }) {
-  const service = serviceDetails[params.slug]
-  if (!service) notFound()
+// ─── Page ──────────────────────────────────────────────────────────────────────
 
-  const relatedServices = siteConfig.services.filter((s) =>
-    service.relatedSlugs.includes(s.slug)
-  )
+export default function ServicePage({ params }: { params: { slug: string } }) {
+  const service = getService(params.slug)
+  if (!service) notFound()
 
   const breadcrumb = breadcrumbSchema([
     { name: 'Home', href: '/' },
@@ -492,7 +695,15 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
     { name: service.name, href: `/services/${service.slug}` },
   ])
   const faq = faqSchema(service.faqs)
-  const schema = serviceSchema({ name: service.name, description: service.description, slug: service.slug })
+  const schema = serviceSchema({
+    name: service.name,
+    description: service.description,
+    slug: service.slug,
+  })
+
+  const relatedServices = service.relatedSlugs
+    .map((slug) => serviceDetails[slug])
+    .filter(Boolean) as ServiceDetail[]
 
   return (
     <>
@@ -511,130 +722,155 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
               <span>/</span>
               <span className="text-brown-dark">{service.name}</span>
             </nav>
-            <p className="font-body text-xs tracking-[0.25em] uppercase text-rose mb-4">{service.tagline}</p>
-            <h1 className="font-display text-display-lg text-brown-dark mb-6">{service.name}</h1>
-            <p className="text-lg text-brown leading-relaxed mb-8 max-w-xl">{service.intro}</p>
-            <div className="flex flex-wrap gap-3 mb-8">
-              <span className="inline-flex items-center gap-2 bg-ivory border border-rose/20 rounded-full px-4 py-2 text-sm text-brown">
-                <span className="text-rose text-xs">⏱</span> {service.duration}
-              </span>
-              <span className="inline-flex items-center gap-2 bg-ivory border border-rose/20 rounded-full px-4 py-2 text-sm text-brown">
-                <span className="text-rose text-xs">£</span> {service.price}
-              </span>
-            </div>
+            <p className="font-body text-xs tracking-[0.25em] uppercase text-rose mb-4">{service.duration} · {service.price}</p>
+            <h1 className="font-display text-display-lg text-brown-dark mb-4">{service.name}</h1>
+            <p className="text-lg text-brown-muted italic mb-6">{service.tagline}</p>
+            <p className="text-brown leading-relaxed mb-8 max-w-xl">{service.intro}</p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/booking" className="btn-primary">Book {service.name}</Link>
-              <Link href="/pricing" className="btn-secondary">View Pricing</Link>
+              <a
+                href={`https://wa.me/${siteConfig.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Book on WhatsApp
+              </a>
+              <Link href="/services" className="btn-secondary">All Services</Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Main content */}
+      {/* Body content */}
       <section className="section bg-ivory">
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2 space-y-12">
+            {/* Main body */}
+            <div className="lg:col-span-2">
               <AnimatedSection>
-                <div className="prose-anastasia text-brown leading-relaxed space-y-5"
-                  dangerouslySetInnerHTML={{ __html: service.body }} />
-              </AnimatedSection>
-
-              {/* Benefits */}
-              <AnimatedSection delay={1}>
-                <div>
-                  <h2 className="font-display text-2xl text-brown-dark mb-6">Benefits</h2>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {service.benefits.map((benefit, i) => (
-                      <li key={i} className="flex items-start gap-3 bg-cream rounded-2xl border border-rose/15 p-4">
-                        <span className="w-1.5 h-1.5 rounded-full bg-rose flex-shrink-0 mt-2" />
-                        <span className="text-sm text-brown leading-relaxed">{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </AnimatedSection>
-
-              {/* Who it's for */}
-              <AnimatedSection delay={2}>
-                <div>
-                  <h2 className="font-display text-2xl text-brown-dark mb-6">Who It&apos;s For</h2>
-                  <ul className="space-y-2">
-                    {service.whoFor.map((item, i) => (
-                      <li key={i} className="flex items-center gap-3 text-sm text-brown">
-                        <span className="w-1 h-1 rounded-full bg-rose flex-shrink-0" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <div
+                  className="prose-anastasia text-brown leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: service.body }}
+                />
               </AnimatedSection>
             </div>
 
             {/* Sidebar */}
-            <aside>
-              <div className="sticky top-28 space-y-5">
-                {/* Booking */}
-                <div className="bg-brown-dark rounded-3xl p-6 text-ivory">
-                  <h3 className="font-display text-xl text-ivory mb-2">{service.name}</h3>
-                  <p className="text-ivory/60 text-sm mb-1">{service.duration}</p>
-                  <p className="text-rose text-lg font-display mb-5">{service.price}</p>
-                  <Link href="/booking" className="btn-rose w-full justify-center text-sm">Book Now</Link>
+            <div className="space-y-6">
+              <AnimatedSection delay={1}>
+                <div className="bg-cream rounded-3xl border border-rose/15 p-7 lg:sticky lg:top-28">
+                  <h3 className="font-display text-xl text-brown-dark mb-4">Book This Service</h3>
+                  <div className="space-y-3 mb-6">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-brown-muted">Duration</span>
+                      <span className="text-brown-dark font-medium">{service.duration}</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-brown-muted">Price</span>
+                      <span className="text-rose-dark font-medium">{service.price}</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-brown-muted">Location</span>
+                      <span className="text-brown-dark font-medium">In-call · W14</span>
+                    </div>
+                  </div>
+                  <a
+                    href={`https://wa.me/${siteConfig.whatsapp}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary w-full text-center block"
+                  >
+                    Book on WhatsApp
+                  </a>
+                  <a
+                    href={`tel:${siteConfig.phone}`}
+                    className="btn-secondary w-full text-center block mt-3"
+                  >
+                    {siteConfig.phoneDisplay}
+                  </a>
                 </div>
+              </AnimatedSection>
 
-                {/* Other services */}
-                <div className="bg-cream rounded-3xl border border-rose/15 p-6">
-                  <h3 className="font-display text-lg text-brown-dark mb-4">Related Treatments</h3>
-                  <ul className="space-y-2">
-                    {relatedServices.map((s) => (
-                      <li key={s.slug}>
-                        <Link href={`/services/${s.slug}`}
-                          className="text-sm text-brown hover:text-rose transition-colors flex items-center gap-2">
-                          <span className="w-1 h-1 rounded-full bg-rose flex-shrink-0" />
-                          {s.name}
-                        </Link>
+              <AnimatedSection delay={2}>
+                <div className="bg-cream rounded-3xl border border-rose/15 p-7">
+                  <h3 className="font-display text-xl text-brown-dark mb-4">Benefits</h3>
+                  <ul className="space-y-2.5">
+                    {service.benefits.map((benefit) => (
+                      <li key={benefit} className="flex items-start gap-2.5 text-sm text-brown">
+                        <span className="w-1.5 h-1.5 rounded-full bg-rose flex-shrink-0 mt-1.5" />
+                        {benefit}
                       </li>
                     ))}
                   </ul>
-                  <Link href="/services" className="text-xs text-rose mt-3 inline-block hover:text-rose-dark transition-colors">
-                    All services →
-                  </Link>
                 </div>
-
-                {/* Contact */}
-                <div className="bg-cream rounded-3xl border border-rose/15 p-6">
-                  <h3 className="font-display text-lg text-brown-dark mb-4">Questions?</h3>
-                  <p className="text-sm text-brown mb-4 leading-relaxed">Not sure which treatment is right for you? Get in touch.</p>
-                  <a href={`https://wa.me/${siteConfig.whatsapp}`}
-                    target="_blank" rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-brown hover:text-rose transition-colors">
-                    <span className="text-rose">→</span> WhatsApp
-                  </a>
-                </div>
-              </div>
-            </aside>
+              </AnimatedSection>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* FAQs */}
+      {/* Who it's for */}
       <section className="section bg-cream">
         <div className="container-site max-w-3xl mx-auto">
           <AnimatedSection className="text-center mb-10">
-            <h2 className="font-display text-2xl text-brown-dark">Frequently Asked Questions</h2>
+            <h2 className="font-display text-display-md text-brown-dark">Who Is This For?</h2>
           </AnimatedSection>
-          <div className="space-y-4">
-            {service.faqs.map((faq, i) => (
-              <AnimatedSection key={i} delay={(Math.min(i + 1, 5) as 1 | 2 | 3 | 4 | 5)}>
-                <div className="bg-ivory rounded-2xl border border-rose/15 p-6">
-                  <h3 className="font-display text-lg text-brown-dark mb-2">{faq.question}</h3>
-                  <p className="text-brown text-sm leading-relaxed">{faq.answer}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {service.whoFor.map((item) => (
+              <AnimatedSection key={item}>
+                <div className="bg-ivory rounded-2xl border border-rose/15 p-5 flex items-start gap-3">
+                  <span className="text-rose text-sm flex-shrink-0 mt-0.5">✦</span>
+                  <span className="text-sm text-brown">{item}</span>
                 </div>
               </AnimatedSection>
             ))}
           </div>
         </div>
       </section>
+
+      {/* FAQs */}
+      <section className="section bg-ivory">
+        <div className="container-site max-w-3xl mx-auto">
+          <AnimatedSection className="text-center mb-10">
+            <h2 className="font-display text-display-md text-brown-dark">Common Questions</h2>
+          </AnimatedSection>
+          <div className="space-y-4">
+            {service.faqs.map((faq, i) => (
+              <AnimatedSection key={faq.question} delay={(Math.min(i, 5) as 0 | 1 | 2 | 3 | 4 | 5)}>
+                <div className="bg-cream rounded-2xl border border-rose/15 p-6">
+                  <h3 className="font-display text-lg text-brown-dark mb-3">{faq.question}</h3>
+                  <p className="text-sm text-brown leading-relaxed">{faq.answer}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related services */}
+      {relatedServices.length > 0 && (
+        <section className="section bg-cream">
+          <div className="container-site">
+            <AnimatedSection className="text-center max-w-2xl mx-auto mb-10">
+              <h2 className="font-display text-display-md text-brown-dark">You Might Also Like</h2>
+            </AnimatedSection>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+              {relatedServices.map((related, i) => (
+                <AnimatedSection key={related.slug} delay={(Math.min(i, 5) as 0 | 1 | 2 | 3 | 4 | 5)}>
+                  <Link href={`/services/${related.slug}`} className="service-card flex flex-col h-full group">
+                    <h3 className="font-display text-xl text-brown-dark mb-2 group-hover:text-brown transition-colors">{related.name}</h3>
+                    <p className="text-sm text-brown-muted leading-relaxed line-clamp-2 mb-4">{related.tagline}</p>
+                    <div className="flex items-center justify-between mt-auto pt-4 border-t border-rose/20">
+                      <span className="text-xs text-brown-muted">{related.price}</span>
+                      <span className="text-rose text-xs">→</span>
+                    </div>
+                  </Link>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <BookingCTA />
     </>

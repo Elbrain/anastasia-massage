@@ -9,17 +9,15 @@ export function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           {/* Image column */}
           <AnimatedSection className="relative">
-            <div className="relative rounded-4xl overflow-hidden aspect-[4/5] max-w-md mx-auto lg:mx-0 bg-ivory">
-              {/* Placeholder image frame */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-ivory to-cream">
-                <Image
-                  src="/logo-transparent.png"
-                  alt="Anastasia — Certified Massage Therapist London"
-                  width={420}
-                  height={280}
-                  className="object-contain"
-                />
-              </div>
+            <div className="relative rounded-4xl overflow-hidden aspect-[4/5] max-w-md mx-auto lg:mx-0 bg-cream">
+              {/* Anna portrait */}
+              <Image
+                src="/images/anastasia-portrait.jpg"
+                alt="Anna — sensual massage therapist in London"
+                fill
+                sizes="(max-width: 1024px) 100vw, 420px"
+                className="object-cover"
+              />
               {/* Decorative corner */}
               <div
                 className="absolute top-6 left-6 w-24 h-24 border border-rose/30 rounded-full"
@@ -39,8 +37,8 @@ export function About() {
                 </svg>
               </div>
               <div>
-                <p className="font-display text-sm text-brown-dark font-semibold">Certified</p>
-                <p className="font-body text-xs text-brown-muted">Professional Therapist</p>
+                <p className="font-display text-sm text-brown-dark font-semibold">Discreet</p>
+                <p className="font-body text-xs text-brown-muted">Private & Confidential</p>
               </div>
             </div>
           </AnimatedSection>
@@ -48,30 +46,30 @@ export function About() {
           {/* Text column */}
           <div>
             <AnimatedSection delay={1}>
-              <p className="font-body text-xs tracking-[0.25em] uppercase text-rose mb-4">About Anastasia</p>
+              <p className="font-body text-xs tracking-[0.25em] uppercase text-rose mb-4">About Anna</p>
               <h2 className="font-display text-display-md text-brown-dark mb-6">
-                A Dedicated Therapist,<br />
-                <span className="italic font-light">Not a Chain</span>
+                An Intimate Experience,<br />
+                <span className="italic font-light">Just for You</span>
               </h2>
             </AnimatedSection>
 
             <AnimatedSection delay={2}>
               <div className="space-y-4 mb-8 text-brown leading-relaxed">
                 <p>
-                  I&apos;m Anastasia, a certified massage therapist based in London. I started
-                  practising because I believe that proper, attentive bodywork changes lives —
-                  and that everyone deserves access to a therapist who genuinely listens.
+                  I&apos;m Anna, a sensual massage therapist based in London. I created this
+                  space for people who want more than a routine treatment — a warm, unhurried
+                  experience where you can completely let go.
                 </p>
                 <p>
-                  Every session I offer is tailored to you. Whether you&apos;re dealing with chronic
-                  back tension from desk work, recovering from sport, managing stress, or simply
-                  wanting to restore some calm — I take the time to understand what your body
-                  actually needs that day.
+                  Every session is tailored to you. Whether you long for the slow build of a
+                  tantric massage, the closeness of body-to-body and nuru, or simply deep,
+                  sensual relaxation — I take the time to understand exactly what you want, and
+                  let the experience unfold at your pace.
                 </p>
                 <p>
-                  I work from a dedicated treatment room in Central London three days a week, and
-                  offer home visits across the city the rest of the time. No receptionists, no
-                  upsells, no noise — just focused, professional massage.
+                  I work from a private, candlelit in-call studio in West Kensington (W14).
+                  No rush, no judgement, complete confidentiality — just you, beautifully
+                  looked after, in a calm and discreet space.
                 </p>
               </div>
             </AnimatedSection>
@@ -79,9 +77,9 @@ export function About() {
             <AnimatedSection delay={3}>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
-                  { number: '500+', label: 'Sessions Completed' },
-                  { number: '8+', label: 'Massage Specialisms' },
-                  { number: '100%', label: 'Client Satisfaction' },
+                  { number: '100%', label: 'Discreet & Private' },
+                  { number: '4', label: 'Signature Rituals' },
+                  { number: 'W14', label: 'West Kensington' },
                   { number: '7 Days', label: 'Available Weekly' },
                 ].map((stat) => (
                   <div key={stat.label} className="bg-ivory rounded-2xl p-5 border border-rose/15">

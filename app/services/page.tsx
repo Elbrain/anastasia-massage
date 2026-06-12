@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { buildMetadata } from '@/lib/metadata'
 import { breadcrumbSchema, serviceSchema } from '@/lib/schema'
 import { siteConfig } from '@/lib/siteConfig'
@@ -7,101 +6,101 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection'
 import { BookingCTA } from '@/components/home/BookingCTA'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Massage Services',
+  title: 'Sensual Massage Services',
   description:
-    'Professional massage services in London: Swedish, deep tissue, sports, aromatherapy, hot stone and more. In-call and outcall available daily 11:00–22:00.',
+    'Sensual massage services in West Kensington, London: sensual, body-to-body, tantric, nuru, full body, hot stone and more. Discreet in-call studio (W14), daily 11:00–22:00.',
   path: '/services',
-  keywords: ['massage services london', 'types of massage london', 'professional massage treatments'],
+  keywords: ['sensual massage london', 'tantric massage london', 'nuru massage london', 'body to body massage london'],
 })
 
 const services = [
   {
-    slug: 'swedish-massage',
-    name: 'Swedish Massage',
-    shortDesc: 'Classic relaxation. Long, flowing strokes that melt tension and promote deep rest.',
+    slug: 'sensual-massage',
+    name: 'Sensual Massage',
+    shortDesc: 'Slow, full-body massage that awakens the senses. Warm oil, unhurried touch, deep relaxation.',
     fullDesc:
-      "Swedish massage is the foundation of Western massage therapy — and for good reason. Using long gliding strokes (effleurage), kneading (petrissage), circular movements, vibration, and tapping, Swedish massage improves circulation, eases muscle tension, and promotes a profound sense of relaxation. It's the ideal treatment if you're new to massage, dealing with general stress, or simply want to give your body a proper reset.",
-    benefits: ['Reduces stress hormones', 'Improves circulation', 'Eases muscle tension', 'Promotes better sleep'],
-    duration: '60 / 90 / 120 min',
+      "Sensual massage is about slowing right down. Using warm oil and long, flowing, full-body strokes, the treatment quiets a busy mind and gently awakens the senses. There is no rush and no script — we begin softly, your breathing settles, and the tension you have been carrying simply melts away. It is the perfect introduction to sensual bodywork and one of the most soothing, restorative experiences you can give yourself.",
+    benefits: ['Deep relaxation', 'Heightened awareness of the body', 'Release of stress and tension', 'A blissful, unhurried escape'],
+    duration: '30 / 60 min',
     price: 'From £80',
-    who: 'Everyone, especially first-timers and those dealing with stress or fatigue',
+    who: 'Anyone wanting to unwind, switch off, and enjoy slow, sensual full-body relaxation',
   },
   {
-    slug: 'deep-tissue-massage',
-    name: 'Deep Tissue Massage',
-    shortDesc: 'Targeted pressure into deeper muscle layers. For chronic tension, knots, and postural issues.',
+    slug: 'body-to-body-massage',
+    name: 'Body to Body Massage',
+    shortDesc: 'Intimate, skin-on-skin technique using the whole body for warm, gliding pressure.',
     fullDesc:
-      "Deep tissue massage goes below the surface. Using slow, deliberate strokes and deep finger pressure, I work through the top layers of muscle to reach the deeper tissues where chronic tension, adhesions, and knots accumulate. It's particularly effective for desk workers carrying shoulder and neck tension, people with recurring back pain, and anyone whose body has learned to hold stress in a specific pattern.",
-    benefits: ['Breaks down scar tissue', 'Releases chronic tension', 'Reduces inflammation', 'Improves posture'],
-    duration: '60 / 90 / 120 min',
-    price: 'From £90',
-    who: 'Office workers, chronic pain sufferers, people with postural issues',
-  },
-  {
-    slug: 'sports-massage',
-    name: 'Sports Massage',
-    shortDesc: 'Performance and recovery. Combines deep tissue, stretching and trigger point work.',
-    fullDesc:
-      "Sports massage isn't just for athletes. Yes, it's designed around the demands of physical training — but the techniques are just as useful for anyone whose body is under physical strain. I combine deep tissue work with passive stretching, trigger point therapy, and myofascial release to address the specific muscles under load. Whether you're preparing for a marathon, recovering from a gym session, or dealing with an overuse injury, sports massage addresses the root cause.",
-    benefits: ['Faster recovery', 'Injury prevention', 'Improved flexibility', 'Reduces delayed onset muscle soreness'],
-    duration: '60 / 90 min',
-    price: 'From £85',
-    who: 'Athletes, gym-goers, runners, anyone with repetitive strain or overuse injuries',
-  },
-  {
-    slug: 'aromatherapy-massage',
-    name: 'Aromatherapy Massage',
-    shortDesc: 'Swedish technique enhanced with therapeutic essential oils chosen for your needs.',
-    fullDesc:
-      "Aromatherapy massage combines the physical benefits of Swedish massage with the proven therapeutic effects of essential oils. I select the blend based on what you need — calming lavender and chamomile for stress and sleep issues; invigorating citrus and peppermint for fatigue; deep-heating eucalyptus and rosemary for muscle tension. The oils are diluted in a carrier and absorbed through both the skin and inhalation, working on the body and nervous system simultaneously.",
-    benefits: ['Enhanced relaxation', 'Mood elevation', 'Skin nourishment', 'Hormonal balance'],
-    duration: '60 / 90 / 120 min',
-    price: 'From £90',
-    who: 'Those dealing with stress, anxiety, hormonal imbalance, poor sleep or skin concerns',
-  },
-  {
-    slug: 'hot-stone-massage',
-    name: 'Hot Stone Massage',
-    shortDesc: 'Heated basalt stones placed on key points and used in massage strokes for deep warmth.',
-    fullDesc:
-      "There's nothing quite like the weight and warmth of hot stones on tired muscles. I use smooth basalt lava stones, heated to the perfect temperature, both as placement stones on key meridian points and as extension tools during massage strokes. The heat penetrates deep into the muscle tissue — reaching places that hands alone cannot — and allows for a deeper release with less pressure. The result is profoundly grounding and restorative.",
-    benefits: ['Deep muscle relaxation', 'Improved circulation', 'Stress relief', 'Grounding and calming'],
-    duration: '90 / 120 min',
+      "Body to body massage is one of the most intimate and immersive experiences available. Rather than using the hands alone, I use my whole body to apply warm, gliding pressure — creating a closeness and connection that hands simply cannot replicate. Every movement is slow, deliberate and deeply relaxing. It is sensual, comforting and wonderfully grounding from the very first touch.",
+    benefits: ['Profound sense of connection', 'Full-body relaxation', 'Melts away tension and stress', 'Warm, intimate and immersive'],
+    duration: '30 / 60 min',
     price: 'From £100',
-    who: 'Those seeking deep relaxation; particularly good in colder months or for people who feel the cold',
+    who: 'Those who want a closer, more intimate experience than a traditional massage',
   },
   {
-    slug: 'therapeutic-massage',
-    name: 'Therapeutic Massage',
-    shortDesc: 'Clinical, targeted work for specific conditions. Assessment-led, outcome-focused.',
+    slug: 'tantric-massage',
+    name: 'Tantric Massage',
+    shortDesc: 'A slow, breath-led full-body ritual that builds and channels energy across the body.',
     fullDesc:
-      "Therapeutic massage takes a clinical approach to soft tissue work. I begin with a brief assessment — range of motion, postural observation, palpation — to identify what's actually happening in the body, then design the session around addressing it. This might involve myofascial release for restricted fascia, neuromuscular techniques for trigger points, joint mobilisation, or deep tissue work depending on what's indicated. It's particularly suited for persistent conditions that general massage hasn't resolved.",
-    benefits: ['Addresses root causes', 'Pain reduction', 'Improved range of motion', 'Condition-specific outcomes'],
-    duration: '60 / 90 min',
-    price: 'From £85',
-    who: 'Chronic back pain, frozen shoulder, sciatica, tension headaches, repetitive strain injury',
+      "Tantric massage is a slow, mindful ritual rooted in ancient tantra. Guided by breath and presence, the treatment works with the whole body to build, move and channel energy — creating waves of relaxation and heightened sensation. It is far more than a massage; it is a meditative journey that leaves you feeling deeply present, alive and beautifully relaxed. Best enjoyed unhurried, over 90 minutes or more.",
+    benefits: ['Deep presence and relaxation', 'Breath-led, full-body energy', 'Heightened sensation and awareness', 'A meditative, restorative experience'],
+    duration: '60 min',
+    price: 'From £100',
+    who: 'Those drawn to a slower, more spiritual and full-body sensual experience',
+  },
+  {
+    slug: 'nuru-massage',
+    name: 'Nuru Massage',
+    shortDesc: 'The signature body-to-body experience using silky, odourless Nuru gel.',
+    fullDesc:
+      "Nuru is the ultimate body-to-body experience. Originating in Japan, it uses a special odourless, colourless gel made from seaweed that becomes incredibly silky and slippery when warmed. The result is an unbelievably smooth, gliding sensation as the whole body is used to massage yours. Warm, slippery and utterly indulgent, a nuru massage is a one-of-a-kind experience you will not forget.",
+    benefits: ['Incredibly smooth, gliding sensation', 'The most immersive body-to-body experience', 'Skin-softening Nuru gel', 'Warm, indulgent and unforgettable'],
+    duration: '30 / 60 min',
+    price: 'From £100',
+    who: 'Those wanting the most immersive and indulgent sensual experience on the menu',
+  },
+  {
+    slug: 'full-body-massage',
+    name: 'Full Body Massage',
+    shortDesc: 'Comprehensive, head-to-toe coverage with warm oil. A complete sensual reset.',
+    fullDesc:
+      "A full body massage is exactly what it sounds like — slow, warm-oil attention from the shoulders to the feet, leaving no area untouched. It is the ultimate reset: a complete, sensual journey across the whole body that leaves you glowing, relaxed and fully unwound. Combine it with any of the sensual techniques for a longer, more indulgent experience.",
+    benefits: ['Complete head-to-toe relaxation', 'Warm oil and flowing strokes', 'A full sensual reset', 'Deeply restorative'],
+    duration: '60 min',
+    price: 'From £130',
+    who: 'Anyone wanting thorough, unhurried full-body relaxation',
   },
   {
     slug: 'relaxing-massage',
     name: 'Relaxing Massage',
     shortDesc: 'Pure, unhurried relaxation. Gentle pressure, soothing strokes, complete calm.',
     fullDesc:
-      "Sometimes you don't need clinical precision — you need to be held, supported, and allowed to let go completely. Relaxing massage uses gentle to medium pressure, slow rhythmic strokes, and a carefully calm environment to switch off your nervous system's fight-or-flight response and activate the parasympathetic rest state. It's deeply beneficial for anxiety, burnout, and overwhelm — and it's also simply one of the most pleasurable things you can do for yourself.",
-    benefits: ['Immediate stress relief', 'Lower cortisol levels', 'Improved sleep', 'Mental clarity'],
-    duration: '60 / 90 / 120 min',
+      "Sometimes you simply need to be looked after, supported, and allowed to let go completely. Relaxing massage uses gentle to medium pressure, slow rhythmic strokes and a calm, candlelit atmosphere to quiet the nervous system and melt away stress. It is the gentlest treatment on the menu and a beautiful way to ease into sensual massage for the very first time.",
+    benefits: ['Immediate stress relief', 'Calms the nervous system', 'Improved sleep', 'Soft, soothing and gentle'],
+    duration: '30 / 60 min',
     price: 'From £80',
-    who: 'Anyone experiencing stress, anxiety, burnout, or anyone who simply needs to recharge',
+    who: 'Anyone feeling stressed or overwhelmed, and first-timers wanting a gentle start',
   },
   {
-    slug: 'full-body-massage',
-    name: 'Full Body Massage',
-    shortDesc: 'Comprehensive coverage. Back, shoulders, arms, legs, feet — nothing left unaddressed.',
+    slug: 'aromatherapy-massage',
+    name: 'Aromatherapy Massage',
+    shortDesc: 'Sensual massage enhanced with warm, aromatic oils chosen for the mood.',
     fullDesc:
-      "A full body massage is exactly what it sounds like: a thorough, comprehensive treatment that works through every major muscle group from the scalp to the feet. It's the ultimate reset — ideal before a holiday, after a particularly stressful period, or simply as a regular maintenance treatment to keep your body in good condition. The approach combines Swedish, deep tissue, and stretching techniques, adapted to what each area of your body needs on the day.",
-    benefits: ['Total body reset', 'Complete muscle relaxation', 'Improved body awareness', 'Holistic wellbeing'],
-    duration: '90 / 120 min',
+      "Aromatherapy massage adds another layer to the senses. Warm, aromatic oils are chosen for the mood you are in — calming and floral, warm and spicy, or soft and uplifting. As the scent fills the room and the oil glides across the skin, the experience becomes as much about the senses as the body. Deeply relaxing, mood-lifting and beautifully indulgent.",
+    benefits: ['Multi-sensory relaxation', 'Mood-lifting aromatic oils', 'Soft, nourished skin', 'Warm and indulgent'],
+    duration: '30 / 60 min',
     price: 'From £90',
-    who: 'Anyone wanting a comprehensive treatment; great as a regular maintenance session',
+    who: 'Those who love scent and want a richer, multi-sensory experience',
+  },
+  {
+    slug: 'hot-stone-massage',
+    name: 'Hot Stone Massage',
+    shortDesc: 'Smooth, heated stones glide across the body to spread deep, melting warmth.',
+    fullDesc:
+      "There is nothing quite like the weight and warmth of smooth heated stones gliding across the body. The deep, radiant heat melts tension away and spreads a comforting, grounding warmth from head to toe. Combined with sensual full-body strokes, hot stone massage is profoundly relaxing — especially in the cooler months, or any time you want to feel completely warmed and cared for.",
+    benefits: ['Deep, melting warmth', 'Comforting and grounding', 'Eases tension effortlessly', 'Beautifully relaxing'],
+    duration: '60 min',
+    price: 'From £130',
+    who: 'Those who love warmth and want a cosy, deeply comforting experience',
   },
 ]
 
@@ -133,11 +132,12 @@ export default function ServicesPage() {
         <div className="container-site text-center max-w-3xl mx-auto">
           <p className="font-body text-xs tracking-[0.25em] uppercase text-rose mb-4">What I Offer</p>
           <h1 className="font-display text-display-lg text-brown-dark mb-6">
-            Massage Services in London
+            Sensual Massage in London
           </h1>
           <p className="text-brown leading-relaxed text-lg">
-            Eight distinct treatments, each one adapted to your body and needs on the day.
-            Available daily from 11:00 to 22:00, in-call and outcall across London.
+            A menu of slow, sensual experiences — from sensual and tantric to nuru and
+            body-to-body. Each one unhurried and adapted to you, at my discreet in-call
+            studio in West Kensington. Available daily from 11:00 to 22:00.
           </p>
         </div>
       </section>
@@ -179,9 +179,14 @@ export default function ServicesPage() {
                       </div>
                     </div>
 
-                    <Link href="/booking" className="btn-primary inline-flex">
+                    <a
+                      href={`https://wa.me/${siteConfig.whatsapp}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary inline-flex"
+                    >
                       Book {service.name}
-                    </Link>
+                    </a>
                   </div>
 
                   {/* Decorative side */}

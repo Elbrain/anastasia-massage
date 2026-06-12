@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 import { siteConfig } from '@/lib/siteConfig'
 
@@ -30,24 +29,21 @@ export function BookingCTA() {
           </div>
 
           <h2 className="font-display text-display-lg text-brown-dark mb-6">
-            Ready to Feel the Difference?
+            Ready to Unwind?
           </h2>
           <p className="font-body text-lg text-brown leading-relaxed mb-10 max-w-xl mx-auto">
-            Book your appointment online or reach out via WhatsApp to discuss your
-            needs first. Same-day appointments are often available.
+            Message me on WhatsApp or call to arrange your session and ask anything
+            you&apos;d like. Discreet, relaxed, and same-day appointments often available.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link href="/booking" className="btn-primary text-base px-9 py-4">
-              Book an Appointment
-            </Link>
             <a
               href={`https://wa.me/${siteConfig.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary text-base px-9 py-4"
+              className="btn-primary text-base px-9 py-4"
             >
-              WhatsApp First
+              Book on WhatsApp
             </a>
             <a
               href={`tel:${siteConfig.phone}`}
@@ -62,7 +58,7 @@ export function BookingCTA() {
 
           {/* Trust micro-copy */}
           <p className="font-body text-xs text-brown-muted mt-8 tracking-wide">
-            No commitment required · Simple enquiry form · Usually respond within the hour
+            100% discreet · No commitment required · Usually respond within the hour
           </p>
         </AnimatedSection>
       </div>

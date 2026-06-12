@@ -8,42 +8,42 @@ import { siteConfig } from '@/lib/siteConfig'
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Anastasia — Certified Massage Therapist London',
-    template: '%s | Anastasia Massage London',
+    default: 'Anna — Sensual Massage London',
+    template: '%s | Anna Sensual Massage London',
   },
   description:
-    'Professional massage therapy in London by Anastasia. Swedish, deep tissue, sports, aromatherapy and more. In-call and outcall available daily 11:00–22:00.',
+    'Private sensual massage in West Kensington, London by Anna. Sensual, body-to-body, tantric and nuru massage in a warm, discreet in-call studio (W14). Daily 11:00–22:00.',
   keywords: [
-    'massage london',
-    'massage therapist london',
-    'swedish massage london',
-    'deep tissue massage london',
-    'outcall massage london',
-    'professional massage',
+    'sensual massage london',
+    'tantric massage london',
+    'nuru massage london',
+    'body to body massage london',
+    'massage west kensington',
+    'erotic massage london',
   ],
-  authors: [{ name: 'Anastasia', url: siteConfig.url }],
-  creator: 'Anastasia',
+  authors: [{ name: 'Anna', url: siteConfig.url }],
+  creator: 'Anna',
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: siteConfig.url,
     siteName: siteConfig.fullName,
-    title: 'Anastasia — Certified Massage Therapist London',
+    title: 'Anna — Sensual Massage London',
     description:
-      'Professional massage therapy in London. Swedish, deep tissue, sports, aromatherapy and more. Book today.',
+      'Private sensual, tantric, nuru and body-to-body massage in London. Warm, discreet and unhurried. Book via WhatsApp.',
     images: [
       {
         url: `${siteConfig.url}/og-default.jpg`,
         width: 1200,
         height: 630,
-        alt: 'Anastasia — Massage Therapist London',
+        alt: 'Anna — Sensual Massage London',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Anastasia — Certified Massage Therapist London',
-    description: 'Professional massage therapy in London. Book your appointment today.',
+    title: 'Anna — Sensual Massage London',
+    description: 'Private sensual massage in London. Discreet, warm and unhurried. Book via WhatsApp.',
     images: [`${siteConfig.url}/og-default.jpg`],
   },
   robots: {
@@ -75,7 +75,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#EFE6DF" />
+        <meta name="theme-color" content="#EFE0D4" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

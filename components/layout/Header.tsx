@@ -9,9 +9,9 @@ import { siteConfig } from '@/lib/siteConfig'
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
-  { href: '/portfolio', label: 'Portfolio' },
+  { href: '/portfolio', label: 'Gallery' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/blog', label: 'Journal' },
   { href: '/about', label: 'About' },
 ]
 
@@ -38,12 +38,11 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="group transition-opacity duration-200 hover:opacity-85">
             <Image
-              src="/logo.png"
-              alt="Anastasia Massage Therapist London"
-              width={180}
-              height={120}
+              src="/logo-transparent.png"
+              alt="Anna Massage Therapist London"
+              width={200}
+              height={67}
               className="object-contain transition-transform duration-300 group-hover:scale-[1.03]"
-              style={{ mixBlendMode: 'multiply' }}
               priority
             />
           </Link>
@@ -68,7 +67,7 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 rounded-full border border-sage text-brown hover:bg-sage/20 transition-colors duration-200 text-sm"
-              aria-label="WhatsApp Anastasia"
+              aria-label="WhatsApp Anna"
             >
               {/* WhatsApp icon */}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -77,7 +76,7 @@ export function Header() {
               WhatsApp
             </a>
             <Link href="/booking" className="btn-primary text-sm">
-              Book Appointment
+              Book Now
             </Link>
           </div>
 
@@ -107,17 +106,7 @@ export function Header() {
             mobileOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <div className="flex items-center justify-between p-6 border-b border-rose/20">
-            <Link href="/" onClick={() => setMobileOpen(false)}>
-              <Image
-                src="/logo.png"
-                alt="Anastasia Massage Therapist"
-                width={150}
-                height={100}
-                className="object-contain"
-                style={{ mixBlendMode: 'multiply' }}
-              />
-            </Link>
+          <div className="flex items-center justify-end p-5 border-b border-rose/20">
             <button
               onClick={() => setMobileOpen(false)}
               className="p-2 rounded-full hover:bg-cream transition-colors"
@@ -157,7 +146,7 @@ export function Header() {
               className="btn-primary w-full justify-center text-sm"
               onClick={() => setMobileOpen(false)}
             >
-              Book Appointment
+              Book Now
             </Link>
             <a
               href={`tel:${siteConfig.phone}`}

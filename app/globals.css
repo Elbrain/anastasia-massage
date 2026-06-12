@@ -10,19 +10,20 @@
   --font-inter: 'Inter', system-ui, sans-serif;
   --font-great-vibes: 'Great Vibes', cursive;
 
-  /* Color tokens */
-  --ivory: #F7F2ED;
-  --cream: #EFE6DF;
-  --rose: #D8B5A6;
-  --rose-light: #E6C7BC;
-  --rose-dark: #C49A88;
-  --brown-dark: #4A3428;
-  --brown: #6E564A;
-  --brown-light: #8B6E60;
-  --brown-muted: #9E8276;
-  --sage: #A9AA95;
-  --sage-light: #C4C5B2;
-  --gold: #C8A882;
+  /* Color tokens — warm, candlelit */
+  --ivory: #F8F1E8;
+  --cream: #EFE0D4;
+  --rose: #CF9C86;
+  --rose-light: #E4BEAE;
+  --rose-dark: #B27A63;
+  --brown-dark: #3C271C;
+  --brown: #5E4232;
+  --brown-light: #87664F;
+  --brown-muted: #9A7B68;
+  --sage: #A6A48C;
+  --sage-light: #C2C1AC;
+  --wine: #7B3540;
+  --gold: #C49A66;
 
   /* Scrollbar */
   scrollbar-width: thin;
@@ -175,7 +176,7 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(216,181,166,0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(207,156,134,0.22) 0%, transparent 70%);
 }
 
 /* ─── Prose overrides for blog ─── */
@@ -215,6 +216,4 @@ body {
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(4px);
-}
+  justify-content: c

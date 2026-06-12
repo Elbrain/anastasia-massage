@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { buildMetadata } from '@/lib/metadata'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Privacy Policy — Anastasia Massage Therapist London',
-  description: 'Privacy policy for Anastasia Massage Therapist. How we collect, use and protect your personal information.',
+  title: 'Privacy Policy — Anna Massage Therapist London',
+  description: 'Privacy policy for Anna Massage Therapist. How we collect, use and protect your personal information.',
   path: '/privacy',
 })
 
@@ -25,8 +25,8 @@ export default function PrivacyPage() {
 
           <div>
             <h2 className="font-display text-xl text-brown-dark mb-3">1. Who We Are</h2>
-            <p>This website is operated by Anastasia, an independent certified massage therapist based in London, UK. References to &quot;we&quot;, &quot;us&quot; or &quot;our&quot; in this policy refer to Anastasia Massage Therapy.</p>
-            <p className="mt-3">If you have any questions about this privacy policy or how we handle your data, please contact us at: <a href="mailto:hello@anastassiamassage.co.uk" className="text-rose hover:underline">hello@anastassiamassage.co.uk</a></p>
+            <p>This website is operated by Anna, an independent sensual massage therapist based in London, UK. References to &quot;we&quot;, &quot;us&quot; or &quot;our&quot; in this policy refer to Anna.</p>
+            <p className="mt-3">If you have any questions about this privacy policy or how we handle your data, please contact us on <a href="https://wa.me/447768164518" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">WhatsApp</a>.</p>
           </div>
 
           <div>
@@ -34,9 +34,8 @@ export default function PrivacyPage() {
             <p>We collect information you provide directly to us when you:</p>
             <ul className="mt-3 space-y-2 list-none pl-0">
               {[
-                'Submit a booking request through our website form',
-                'Contact us via WhatsApp or telephone',
-                'Send us an email enquiry',
+                'Contact us via WhatsApp',
+                'Call or text us by telephone',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-rose flex-shrink-0 mt-1.5" />
@@ -44,7 +43,7 @@ export default function PrivacyPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-4">The information collected may include your name, phone number, email address, preferred appointment date and time, massage type preference, and any notes you provide about your health or preferences relevant to your treatment.</p>
+            <p className="mt-4">The information collected may include your name, phone number, preferred appointment date and time, and any preferences you share when arranging your session. We keep this to the minimum needed to arrange and provide your appointment.</p>
           </div>
 
           <div>
@@ -90,7 +89,7 @@ export default function PrivacyPage() {
 
           <div>
             <h2 className="font-display text-xl text-brown-dark mb-3">6. Third-Party Services</h2>
-            <p>Our website is hosted on Vercel. Booking form submissions are processed via Resend for email delivery. These services may process your data in accordance with their own privacy policies. We use these services solely to operate our website and booking system.</p>
+            <p>Our website is hosted on Vercel. Enquiries are made directly via WhatsApp or telephone, which are governed by their own privacy policies. We do not collect personal data through the website itself.</p>
             <p className="mt-3">We do not use tracking cookies, advertising networks, or analytics services that collect personal data beyond standard server logs.</p>
           </div>
 
@@ -112,7 +111,7 @@ export default function PrivacyPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-4">To exercise any of these rights, contact us at <a href="mailto:hello@anastassiamassage.co.uk" className="text-rose hover:underline">hello@anastassiamassage.co.uk</a>. You also have the right to lodge a complaint with the Information Commissioner&apos;s Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">ico.org.uk</a>.</p>
+            <p className="mt-4">To exercise any of these rights, contact us at <a href="https://wa.me/447768164518" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">WhatsApp</a>. You also have the right to lodge a complaint with the Information Commissioner&apos;s Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">ico.org.uk</a>.</p>
           </div>
 
           <div>

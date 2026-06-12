@@ -1,14 +1,14 @@
 import Link from 'next/link'
-import { Phone, Mail, Clock, MapPin } from 'lucide-react'
+import { Phone, Clock, MapPin } from 'lucide-react'
 import { siteConfig } from '@/lib/siteConfig'
 
 const quickLinks = [
   { href: '/services', label: 'Services' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/booking', label: 'Book Appointment' },
-  { href: '/portfolio', label: 'Portfolio' },
+  { href: '/booking', label: 'Book / Contact' },
+  { href: '/portfolio', label: 'Gallery' },
   { href: '/about', label: 'About' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/blog', label: 'Journal' },
 ]
 
 const localLinks = [
@@ -37,7 +37,7 @@ export function Footer() {
                   className="font-display text-[2.4rem] leading-none text-ivory/90 group-hover:text-ivory transition-colors"
                   style={{ fontStyle: 'italic', fontWeight: 300, letterSpacing: '-0.01em' }}
                 >
-                  Anastasia
+                  Anna
                 </span>
                 {/* Decorative divider */}
                 <div className="flex items-center gap-2 my-2 w-full">
@@ -51,27 +51,16 @@ export function Footer() {
                 </div>
                 {/* Subtitle */}
                 <span className="font-body text-[9px] tracking-[0.32em] uppercase text-ivory/40 self-stretch text-center">
-                  Massage Therapist · London
+                  Sensual Massage · London
                 </span>
               </div>
             </Link>
             <p className="text-sm leading-relaxed text-ivory/60 mb-6 max-w-xs">
-              Certified massage therapist based in London. Specialising in Swedish, deep tissue,
-              sports and therapeutic massage.
+              Private sensual massage in London. Sensual, body-to-body, tantric and nuru
+              massage in a warm, discreet and unhurried setting.
             </p>
             {/* Social */}
             <div className="flex gap-3">
-              <a
-                href={siteConfig.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="w-9 h-9 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-rose/30 transition-colors duration-200"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-              </a>
               <a
                 href={`https://wa.me/${siteConfig.whatsapp}`}
                 target="_blank"
@@ -136,8 +125,8 @@ export function Footer() {
                 <MapPin size={15} className="text-rose mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-ivory/80 font-medium">Location</p>
-                  <p className="text-sm text-ivory/50">Central London</p>
-                  <p className="text-xs text-ivory/40">In-call &amp; Outcall Available</p>
+                  <p className="text-sm text-ivory/50">West Kensington, W14</p>
+                  <p className="text-xs text-ivory/40">In-call only · Address shared on booking</p>
                 </div>
               </li>
               <li className="flex items-center gap-3">
@@ -150,12 +139,16 @@ export function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={15} className="text-rose flex-shrink-0" />
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" className="text-rose flex-shrink-0">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+                </svg>
                 <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="text-sm text-ivory/60 hover:text-rose transition-colors duration-200 break-all"
+                  href={`https://wa.me/${siteConfig.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-ivory/60 hover:text-rose transition-colors duration-200"
                 >
-                  {siteConfig.email}
+                  Message on WhatsApp
                 </a>
               </li>
             </ul>
@@ -163,19 +156,31 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Partner banners / backlinks */}
+      <div className="border-t border-ivory/10">
+        <div className="container-site py-8">
+          <p className="text-center font-body text-[10px] tracking-[0.3em] uppercase text-ivory/30 mb-5">
+            Featured On
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <a href="https://www.eurogirlsescort.com" target="_blank" title="EuroGirlsEscort.com"><img src="https://www.eurogirlsescort.com/dist/images/banners/234X60.jpg" alt="EuroGirlsEscort.com" title="EuroGirlsEscort.com" /></a>
+
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <a href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya" target="_blank" rel="noopener" title="Featured on MassageHub.uk — UK massage directory"><img src="https://massagehub.uk/api/badge/sensual-massage-with-leya-in-west-london-leya?style=dark" alt="Featured on MassageHub.uk — UK massage directory" width={250} height={76} style={{border: '0', borderRadius: '10px'}} /></a>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom bar */}
       <div className="border-t border-ivory/10">
-        <div className="container-site py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-ivory/30">
-            © {new Date().getFullYear()} Anastasia Massage Therapist London. All rights reserved.
+        <div className="container-site py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-ivory/40">
+            © {new Date().getFullYear()} Anna — Sensual Massage London. All rights reserved.
           </p>
           <div className="flex gap-5">
-            <Link href="/privacy" className="text-xs text-ivory/30 hover:text-ivory/60 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-xs text-ivory/30 hover:text-ivory/60 transition-colors">
-              Terms
-            </Link>
+            <Link href="/privacy" className="text-xs text-ivory/40 hover:text-ivory/60 transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="text-xs text-ivory/40 hover:text-ivory/60 transition-colors">Terms &amp; Conditions</Link>
           </div>
         </div>
       </div>

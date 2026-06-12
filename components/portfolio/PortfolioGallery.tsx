@@ -1,37 +1,84 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
 const galleryItems = [
-  { id: 1, alt: 'Treatment room — massage table set with fresh linens', category: 'Room', aspect: 'landscape' },
-  { id: 2, alt: 'Aromatherapy oils and candles', category: 'Atmosphere', aspect: 'portrait' },
-  { id: 3, alt: 'Warm lighting and soft furnishings in the treatment room', category: 'Room', aspect: 'landscape' },
-  { id: 4, alt: 'Hot stone arrangement before treatment', category: 'Equipment', aspect: 'portrait' },
-  { id: 5, alt: 'Soft towels and treatment essentials', category: 'Details', aspect: 'landscape' },
-  { id: 6, alt: 'Treatment room ambience — warm and private', category: 'Atmosphere', aspect: 'portrait' },
-  { id: 7, alt: 'Essential oil collection', category: 'Equipment', aspect: 'landscape' },
-  { id: 8, alt: 'Clean, minimal treatment space', category: 'Room', aspect: 'portrait' },
-  { id: 9, alt: 'Professional massage table and accessories', category: 'Equipment', aspect: 'landscape' },
+  {
+    id: 101,
+    src: '/images/anastasia-hero.jpg',
+    alt: 'Anna in red — sensual massage therapist in London',
+    category: 'Anna',
+    aspect: 'portrait',
+  },
+  {
+    id: 102,
+    src: '/images/anastasia-portrait.jpg',
+    alt: 'Anna — sensual massage in London',
+    category: 'Anna',
+    aspect: 'portrait',
+  },
+  {
+    id: 103,
+    src: '/images/anastasia-gallery-1.jpg',
+    alt: 'Anna — private sensual massage in London',
+    category: 'Anna',
+    aspect: 'portrait',
+  },
+  {
+    id: 1,
+    src: '/images/portfolio/portfolio-07-treatment-room.jpg',
+    alt: 'Private sensual massage studio in West Kensington — warm lighting and massage table',
+    category: 'Room',
+    aspect: 'landscape',
+  },
+  {
+    id: 2,
+    src: '/images/portfolio/portfolio-02-hot-stones.jpg',
+    alt: 'Hot basalt stones steaming before a hot stone massage treatment',
+    category: 'Equipment',
+    aspect: 'portrait',
+  },
+  {
+    id: 3,
+    src: '/images/portfolio/portfolio-01-towels.jpg',
+    alt: 'Fresh white towels and treatment essentials laid out before a session',
+    category: 'Details',
+    aspect: 'landscape',
+  },
+  {
+    id: 4,
+    src: '/images/portfolio/portfolio-04-candles.jpg',
+    alt: 'Candles and aromatherapy oils creating a relaxing atmosphere',
+    category: 'Atmosphere',
+    aspect: 'portrait',
+  },
+  {
+    id: 5,
+    src: '/images/portfolio/portfolio-03-table-detail.jpg',
+    alt: 'Professional massage table with face cradle and treatment oils',
+    category: 'Equipment',
+    aspect: 'landscape',
+  },
+  {
+    id: 6,
+    src: '/images/portfolio/portfolio-06-stones-tray.jpg',
+    alt: 'Heated basalt stones on wooden tray ready for treatment',
+    category: 'Equipment',
+    aspect: 'portrait',
+  },
+  {
+    id: 7,
+    src: '/images/portfolio/portfolio-05-oils.jpg',
+    alt: 'Collection of essential oils and aromatherapy blends',
+    category: 'Details',
+    aspect: 'landscape',
+  },
 ]
 
-const CATEGORIES = ['All', 'Room', 'Atmosphere', 'Equipment', 'Details']
-
-function PlaceholderImage({ alt, index }: { alt: string; index: number }) {
-  const hues = ['#EFE6DF', '#E6C7BC', '#D8B5A6', '#C4C5B2', '#EFE6DF']
-  const bg = hues[index % hues.length]
-  return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center" style={{ background: bg }}>
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#9E8276" strokeWidth="1">
-        <rect x="3" y="3" width="18" height="18" rx="2"/>
-        <circle cx="8.5" cy="8.5" r="1.5"/>
-        <path d="M21 15l-5-5L5 21"/>
-      </svg>
-      <p className="font-body text-xs text-brown-muted text-center mt-3 px-4 leading-tight">{alt}</p>
-    </div>
-  )
-}
+const CATEGORIES = ['All', 'Anna', 'Room', 'Equipment', 'Atmosphere', 'Details']
 
 export function PortfolioGallery() {
   const [activeCategory, setActiveCategory] = useState('All')
@@ -77,7 +124,13 @@ export function PortfolioGallery() {
               <div
                 className={`relative w-full bg-cream ${item.aspect === 'portrait' ? 'aspect-[3/4]' : 'aspect-[4/3]'}`}
               >
-                <PlaceholderImage alt={item.alt} index={i} />
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
                 <div className="absolute inset-0 bg-brown-dark/0 group-hover:bg-brown-dark/20 transition-all duration-300 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-ivory/90 rounded-full p-3">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A3428" strokeWidth="1.5">
@@ -105,8 +158,19 @@ export function PortfolioGallery() {
             className="relative max-w-4xl w-full mx-4"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative aspect-[4/3] w-full bg-cream rounded-2xl overflow-hidden">
-              <PlaceholderImage alt={filtered[lightboxIndex].alt} index={lightboxIndex} />
+            <div
+              className={`relative w-full bg-brown-dark rounded-2xl overflow-hidden ${
+                filtered[lightboxIndex].aspect === 'portrait' ? 'aspect-[3/4] max-w-md mx-auto' : 'aspect-[4/3]'
+              }`}
+            >
+              <Image
+                src={filtered[lightboxIndex].src}
+                alt={filtered[lightboxIndex].alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 900px"
+                priority
+              />
             </div>
             <p className="text-center text-ivory/70 text-sm font-body mt-4">
               {filtered[lightboxIndex].alt}
@@ -122,12 +186,6 @@ export function PortfolioGallery() {
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 w-10 h-10 bg-ivory/20 rounded-full flex items-center justify-center text-ivory hover:bg-ivory/30 transition-colors"
             >
               <ChevronRight size={20} />
-            </button>
-            <button
-              onClick={closeLightbox}
-              className="absolute -top-12 right-0 w-10 h-10 bg-ivory/20 rounded-full flex items-center justify-center text-ivory hover:bg-ivory/30 transition-colors"
-            >
-              <X size={18} />
             </button>
           </div>
         </div>

@@ -104,9 +104,10 @@ export async function getRelatedPosts(
 }
 
 export const BLOG_CATEGORIES = [
+  { slug: 'sensual', label: 'Sensual Massage' },
   { slug: 'massage-techniques', label: 'Massage Techniques' },
   { slug: 'massage-london', label: 'Massage in London' },
   { slug: 'wellness', label: 'Wellness' },
   { slug: 'health', label: 'Health & Recovery' },
-  { slug: 'local', label: 'Local Guides' },
+  { slug: 'local', label: 'London Locations' },
 ]

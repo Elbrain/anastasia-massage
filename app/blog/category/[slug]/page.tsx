@@ -21,7 +21,7 @@ export async function generateMetadata({
 
   return buildMetadata({
     title: `${category.label} — Massage Blog`,
-    description: `Articles about ${category.label.toLowerCase()} from Anastasia, certified massage therapist in London.`,
+    description: `Articles about ${category.label.toLowerCase()} from Anna, certified massage therapist in London.`,
     path: `/blog/category/${category.slug}`,
     keywords: [`${category.label.toLowerCase()} massage`, 'massage blog london', 'massage advice'],
   })

@@ -6,19 +6,19 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
 const faqs = [
   {
-    question: 'Do you offer both in-call and outcall massage in London?',
+    question: 'Where are you based?',
     answer:
-      "Yes. I work from a private treatment room in Central London three days per week (address shared upon booking), and I offer outcall sessions — where I travel to your home or hotel — the remaining days. Both options are available daily from 11:00 to 22:00, including weekends.",
+      "I work from a private, discreet in-call studio in West Kensington (W14). The exact address is shared once your booking is confirmed. I'm available daily from 11:00 to 22:00, including weekends.",
   },
   {
-    question: 'What areas of London do you cover for outcall?',
+    question: 'Which areas are you convenient for?',
     answer:
-      "I regularly cover Kensington, Chelsea, Westminster, Paddington, Notting Hill, Mayfair, Knightsbridge, Belgravia, South Kensington, Bayswater, Marylebone, Fitzrovia, Soho, and the wider Central and West London areas. For other locations, please get in touch and I'll do my best to accommodate.",
+      "My West Kensington (W14) studio is easy to reach from Kensington, Chelsea, Hammersmith, Fulham, Earl's Court, Olympia and Shepherd's Bush, and across West and Central London. West Kensington and Barons Court Underground stations are both close by.",
   },
   {
-    question: 'What do I need to prepare for an outcall massage?',
+    question: 'What can I expect when I arrive?',
     answer:
-      "Very little. I bring everything needed — a professional portable massage table, clean linens, oils and towels. All I ask is that you have a space large enough to set the table up (roughly 2.5m x 2m), and that the room is warm. That's it.",
+      "My studio is private, clean, warm and completely discreet — everything is taken care of, so all you need to do is arrive freshly showered and relax. The exact address and simple directions are shared once your booking is confirmed.",
   },
   {
     question: 'How long is a typical session, and what does it include?',
@@ -41,9 +41,9 @@ const faqs = [
       "I ask for at least 24 hours' notice for cancellations or rescheduling. Cancellations with less than 24 hours' notice may be subject to a cancellation fee. I completely understand that life happens — if something urgent comes up, please message me as soon as possible and we'll sort something out.",
   },
   {
-    question: 'Can massage help with my specific issue (back pain, stress, sports recovery)?',
+    question: 'Which massage should I choose?',
     answer:
-      "Massage therapy is genuinely effective for a wide range of conditions — chronic back and neck pain, tension headaches, sports injury recovery, stress and anxiety, poor sleep, and postural problems are among the most common things I help with. During our initial consultation I'll let you know honestly whether I think massage is likely to help, and what approach would work best.",
+      "If you're new to sensual massage, a sensual or relaxing massage is the perfect introduction. Tantric massage suits those who want a slower, breath-led full-body ritual, while nuru and body-to-body are the most intimate and immersive of all. Not sure? Just message me on WhatsApp and I'll happily talk you through the options and help you choose.",
   },
 ]
 
@@ -55,7 +55,7 @@ export function FAQ() {
       <div className="container-site">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
-          <div className="sticky top-28">
+          <div className="lg:sticky lg:top-28">
             <AnimatedSection>
               <p className="font-body text-xs tracking-[0.25em] uppercase text-rose mb-4">
                 Questions & Answers
@@ -69,7 +69,7 @@ export function FAQ() {
                 here, just send me a message on WhatsApp — I usually reply quickly.
               </p>
               <a
-                href={`https://wa.me/447700000000`}
+                href={`https://wa.me/447768164518`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-rose inline-flex"

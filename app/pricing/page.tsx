@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import { buildMetadata } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
@@ -7,71 +6,54 @@ import { BookingCTA } from '@/components/home/BookingCTA'
 import { siteConfig } from '@/lib/siteConfig'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Massage Prices London',
+  title: 'Sensual Massage Prices London',
   description:
-    'Transparent massage therapy pricing in London. Swedish, deep tissue, sports, aromatherapy, hot stone and full body massage. In-call and outcall rates.',
+    'Transparent pricing for sensual, tantric, nuru and body-to-body massage in West Kensington, London. Discreet in-call studio (W14), daily 11:00–22:00.',
   path: '/pricing',
-  keywords: ['massage prices london', 'massage cost london', 'how much massage london'],
+  keywords: ['sensual massage prices london', 'tantric massage cost london', 'nuru massage price london'],
 })
 
 const pricingTiers = [
   {
     name: '30 Minutes',
-    tagline: 'Quick targeted relief',
+    tagline: 'The taster',
     description:
-      'Focused work on one specific area — ideal for a tight back, sore shoulders, tired legs, or a foot treatment after a long day. No filler, just targeted therapy.',
+      'A shorter sensual introduction — perfect for a first visit or when time is short. A gentle way to experience the magic.',
     treatments: [
-      { name: 'Back & Shoulders', price: '£50' },
-      { name: 'Foot Massage', price: '£50' },
-      { name: 'Relaxing / Swedish', price: '£50' },
-      { name: 'Sports Massage', price: '£75' },
-      { name: 'Head & Scalp', price: '£45' },
-    ],
-    popular: false,
-  },
-  {
-    name: '60 Minutes',
-    tagline: 'The essential session',
-    description:
-      'Perfect for targeting a specific area — back and shoulders, legs, or a full-body focus with lighter coverage. Enough time for a thorough treatment.',
-    treatments: [
-      { name: 'Relaxing / Swedish Massage', price: '£80' },
-      { name: 'Deep Tissue Massage', price: '£90' },
-      { name: 'Sports Massage', price: '£140' },
+      { name: 'Sensual Massage', price: '£80' },
+      { name: 'Relaxing Massage', price: '£80' },
       { name: 'Aromatherapy Massage', price: '£90' },
-      { name: 'Therapeutic Massage', price: '£85' },
-      { name: 'Foot Massage', price: '£80' },
+      { name: 'Body to Body Massage', price: '£100' },
+      { name: 'Tantric Massage', price: '£100' },
+      { name: 'Nuru Massage', price: '£100' },
     ],
     popular: false,
   },
   {
-    name: '90 Minutes',
-    tagline: 'The recommended session',
+    name: '1 Hour',
+    tagline: 'The signature session',
     description:
-      'The sweet spot. Enough time for a comprehensive full-body treatment, unhurried and thorough. Most clients find this the most satisfying option.',
+      'The most popular choice — unhurried time to fully relax, let go, and enjoy the experience as it slowly unfolds.',
     treatments: [
-      { name: 'Relaxing / Swedish Massage', price: '£110' },
-      { name: 'Deep Tissue Massage', price: '£120' },
-      { name: 'Sports Massage', price: '£175' },
+      { name: 'Sensual Massage', price: '£120' },
+      { name: 'Relaxing Massage', price: '£120' },
       { name: 'Aromatherapy Massage', price: '£120' },
+      { name: 'Full Body Massage', price: '£130' },
       { name: 'Hot Stone Massage', price: '£130' },
-      { name: 'Therapeutic Massage', price: '£115' },
-      { name: 'Full Body Massage', price: '£115' },
+      { name: 'Body to Body Massage', price: '£140' },
+      { name: 'Tantric Massage', price: '£140' },
+      { name: 'Nuru Massage', price: '£140' },
     ],
     popular: true,
   },
   {
-    name: '120 Minutes',
-    tagline: 'The full experience',
+    name: 'Bespoke',
+    tagline: 'Exclusive & made for you',
     description:
-      'Two full hours of focused bodywork. Comprehensive coverage, deep work, and the luxury of time. Ideal for a special occasion or a quarterly deep reset.',
+      'Longer sessions, multi-hour bookings and exclusive experiences tailored entirely to you. Arranged discreetly — prices discussed personally on WhatsApp.',
     treatments: [
-      { name: 'Relaxing / Swedish Massage', price: '£140' },
-      { name: 'Deep Tissue Massage', price: '£155' },
-      { name: 'Sports Massage', price: '£210' },
-      { name: 'Aromatherapy Massage', price: '£155' },
-      { name: 'Hot Stone Massage', price: '£165' },
-      { name: 'Full Body Massage', price: '£150' },
+      { name: 'Tailored experience', price: 'On request' },
+      { name: 'Extended & multi-hour', price: 'On request' },
     ],
     popular: false,
   },
@@ -98,8 +80,9 @@ export default function PricingPage() {
             Massage Prices in London
           </h1>
           <p className="text-brown leading-relaxed text-lg max-w-xl mx-auto">
-            No hidden fees, no surprises. All prices include everything — no extras
-            for different techniques, oils, or location within covered areas.
+            Honest, simple pricing. The final rate depends on the experience you
+            choose — and bespoke, exclusive sessions can always be arranged just
+            for you. Message me on WhatsApp to discuss.
           </p>
         </div>
       </section>
@@ -146,12 +129,14 @@ export default function PricingPage() {
                       ))}
                     </ul>
 
-                    <Link
-                      href="/booking"
+                    <a
+                      href={`https://wa.me/${siteConfig.whatsapp}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={tier.popular ? 'btn-rose w-full justify-center' : 'btn-secondary w-full justify-center'}
                     >
-                      Book Now
-                    </Link>
+                      Book on WhatsApp
+                    </a>
                   </div>
                 </div>
               </AnimatedSection>
@@ -168,12 +153,12 @@ export default function PricingPage() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-display text-xl text-brown-dark mb-2">Outcall Supplement</h3>
+                <h3 className="font-display text-xl text-brown-dark mb-2">Your Visit</h3>
                 <p className="text-brown text-sm leading-relaxed mb-2">
-                  For outcall sessions (where I travel to your home or hotel), a travel supplement applies depending on your location. Central London postcodes are typically £15–£25. Please enquire for your specific area.
+                  All sessions are in-call at my private, discreet studio in West Kensington (W14). The exact address and simple directions are shared once your booking is confirmed.
                 </p>
                 <p className="text-brown-muted text-xs">
-                  I cover Kensington, Chelsea, Westminster, Paddington, Mayfair, Knightsbridge, Belgravia, Notting Hill, Marylebone, Fitzrovia and surrounding areas.
+                  Easy to reach from Kensington, Chelsea, Hammersmith, Fulham, Earl&apos;s Court and across West London — moments from West Kensington and Barons Court stations.
                 </p>
               </div>
             </div>
@@ -189,10 +174,10 @@ export default function PricingPage() {
           </AnimatedSection>
           <div className="space-y-6">
             {[
-              { q: 'What payment methods do you accept?', a: 'I accept cash and bank transfer (BACS). Please note I do not currently accept card payments.' },
-              { q: 'Is the price inclusive of everything?', a: 'Yes. The price you see covers the full treatment, all oils, linens and equipment. There are no hidden extras for technique upgrades or oil selection.' },
-              { q: 'Do you offer packages or discount for regular clients?', a: 'Yes, if you book a course of sessions (typically 5 or 10), I can offer a reduced rate. Please get in touch to discuss.' },
-              { q: 'What is the cancellation policy?', a: 'I ask for 24 hours notice for cancellations or rescheduling. Late cancellations may be charged at 50% of the session rate.' },
+              { q: 'What payment methods do you accept?', a: 'Cash on the day, please, in a discreet envelope. Card and transfer are not accepted.' },
+              { q: 'Is the price inclusive of everything?', a: 'Yes. The price covers the full session, warm oils or Nuru gel, fresh linens and a relaxed, unhurried experience. There are no surprise add-ons.' },
+              { q: 'Do you see regular clients?', a: 'Of course — many clients return regularly, and I am always happy to look after you again. Just message me to arrange your next visit.' },
+              { q: 'What is the cancellation policy?', a: 'Please give at least 24 hours notice to cancel or reschedule. Late cancellations may be subject to a fee. Life happens — just let me know as early as you can.' },
             ].map((item, i) => (
               <AnimatedSection key={i} delay={(Math.min(i + 1, 5) as 1 | 2 | 3 | 4 | 5)}>
                 <div className="bg-ivory rounded-2xl border border-rose/15 p-6">

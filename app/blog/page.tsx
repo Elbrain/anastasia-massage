@@ -9,7 +9,7 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection'
 export const metadata: Metadata = buildMetadata({
   title: 'Massage Blog — London Tips, Techniques & Wellness',
   description:
-    'Expert advice on massage techniques, wellness, sports recovery, stress relief and massage in London. Written by Anastasia, certified massage therapist.',
+    'Expert advice on massage techniques, wellness, sports recovery, stress relief and massage in London. Written by Anna, certified massage therapist.',
   path: '/blog',
   keywords: ['massage blog', 'massage advice london', 'massage tips', 'wellness advice london'],
 })

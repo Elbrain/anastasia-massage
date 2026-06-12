@@ -6,35 +6,33 @@ const config: LocalAreaConfig = {
   slug: 'massage-kensington',
   postcodes: 'W8 · SW7',
   intro:
-    'Professional massage therapy in Kensington by certified therapist Anastasia. Swedish, deep tissue, sports, aromatherapy, hot stone and more — in-call and outcall available daily 11:00–22:00.',
-  keywords: ['massage kensington', 'massage therapist kensington', 'deep tissue massage kensington', 'outcall massage kensington london', 'mobile massage kensington'],
+    'Sensual massage near Kensington with Anna — sensual, body-to-body, tantric and nuru massage at a private in-call studio in West Kensington (W14), just minutes from Kensington (W8, SW7). Discreet and unhurried, daily 11:00–22:00.',
+  keywords: ['sensual massage kensington', 'tantric massage kensington', 'nuru massage kensington', 'erotic massage kensington', 'body to body massage kensington'],
   body: `
-    <h2>Professional Massage in Kensington</h2>
-    <p>Kensington is one of London's most desirable residential areas — and one of the best-served when it comes to professional massage therapy. Whether you're based in the W8 streets near Holland Park or the SW7 postcodes of South Kensington, professional in-call and outcall massage is straightforwardly available.</p>
+    <h2>Sensual Massage Near Kensington</h2>
+    <p>Kensington is one of London's most elegant neighbourhoods, and my private studio in neighbouring West Kensington (W14) sits just minutes away. If you live or work around High Street Kensington, Holland Park or South Kensington (W8, SW7), a slow, sensual escape is closer than you think.</p>
 
-    <h2>In-Call and Outcall Options</h2>
-    <p>For residents who prefer the dedicated environment of a treatment room, Anastasia's Central London practice is a short journey from Kensington — accessible via High Street Kensington or Gloucester Road tube stations.</p>
-    <p>For those who prefer massage at home, outcall to Kensington (W8, SW7) is available within the standard service area. A travel supplement applies on top of the treatment rate. You'll need a clear space of approximately 250cm × 200cm — Kensington's substantial housing stock means this is rarely an issue.</p>
+    <h2>A Discreet Studio, Moments Away</h2>
+    <p>All sessions are in-call at my warm, candlelit studio in West Kensington — a short hop from Kensington by tube or taxi, with High Street Kensington, Earl's Court and West Kensington stations all close by. The exact address is shared discreetly once your booking is confirmed, so you can simply arrive and relax.</p>
 
-    <h2>Popular Treatments in Kensington</h2>
-    <p>The most frequently requested treatments in this area reflect the client demographic: deep tissue massage for professionals managing the physical toll of demanding careers; sports massage for residents who train regularly at nearby facilities; Swedish and relaxation massage for stress management and regular self-care.</p>
-    <p>Hot stone massage is particularly popular in the autumn and winter months — the deep warmth of the stones suits the season perfectly.</p>
+    <h2>Sensual Treatments for Kensington Clients</h2>
+    <p>Choose from sensual massage, body-to-body, tantric and the signature nuru experience, alongside relaxing, aromatherapy, full body and hot stone massage. Every session is unhurried and tailored to exactly what you're in the mood for — whether that's a 30-minute taster or a full, indulgent hour.</p>
 
-    <h2>Booking</h2>
-    <p>Evening appointments (17:00–21:00) are particularly in demand in Kensington. Booking 2-3 days ahead for these slots is advisable. Weekday morning and afternoon appointments are generally more available at shorter notice.</p>
+    <h2>Booking from Kensington</h2>
+    <p>Evening slots are popular with Kensington clients, so a day or two's notice is wise for those. Message me on WhatsApp to arrange your visit — discreet, relaxed, and often available the same day.</p>
   `,
   faqs: [
     {
-      question: 'Do you offer outcall massage to Kensington?',
-      answer: 'Yes. Anastasia covers Kensington (W8) and South Kensington (SW7) for outcall massage. A travel supplement applies. Available daily 11:00–22:00.',
+      question: 'Where do you see Kensington clients?',
+      answer: 'At my private, discreet in-call studio in West Kensington (W14), just minutes from Kensington. The exact address is shared once your booking is confirmed. Available daily 11:00–22:00.',
     },
     {
-      question: 'What massage types are available in Kensington?',
-      answer: 'Swedish, deep tissue, sports, aromatherapy, hot stone, therapeutic, relaxing and full body massage are all available — either as outcall to Kensington or in-call at the Central London treatment room.',
+      question: 'Which sensual massages can I book near Kensington?',
+      answer: 'Sensual, body-to-body, tantric and nuru massage, plus relaxing, aromatherapy, full body and hot stone — all available as 30-minute, 1-hour or bespoke sessions.',
     },
     {
-      question: 'How do I book a massage in Kensington?',
-      answer: 'Book via the online booking form or message on WhatsApp. Confirm your Kensington address when booking an outcall. Response within a few hours.',
+      question: 'How do I book?',
+      answer: 'Simply message me on WhatsApp or call. Tell me the experience you would like and your preferred time, and I will confirm discreetly — often the same day.',
     },
   ],
 }

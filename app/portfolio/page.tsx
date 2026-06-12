@@ -5,11 +5,11 @@ import { BookingCTA } from '@/components/home/BookingCTA'
 import { PortfolioGallery } from '@/components/portfolio/PortfolioGallery'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Portfolio — Treatment Room & Atmosphere',
+  title: 'Gallery — Anna & The Space',
   description:
-    'A look inside the treatment room. Calm, private, and designed for complete relaxation. Professional massage therapy environment in Central London.',
+    'A glimpse of Anna and the private, candlelit space. Sensual massage in West Kensington, London — calm, discreet and designed for complete relaxation.',
   path: '/portfolio',
-  keywords: ['massage treatment room london', 'massage therapist london portfolio', 'massage room london'],
+  keywords: ['sensual massage london gallery', 'anastasia massage london', 'private massage room london'],
 })
 
 export default function PortfolioPage() {
@@ -28,11 +28,11 @@ export default function PortfolioPage() {
       {/* Hero */}
       <section className="pt-36 pb-20 bg-cream">
         <div className="container-site text-center max-w-3xl mx-auto">
-          <p className="font-body text-xs tracking-[0.25em] uppercase text-rose mb-4">The Space</p>
-          <h1 className="font-display text-display-lg text-brown-dark mb-6">Portfolio</h1>
+          <p className="font-body text-xs tracking-[0.25em] uppercase text-rose mb-4">Gallery</p>
+          <h1 className="font-display text-display-lg text-brown-dark mb-6">Gallery</h1>
           <p className="text-brown leading-relaxed text-lg max-w-xl mx-auto">
-            A glimpse inside the treatment room — calm, private, and designed for
-            complete relaxation from the moment you arrive.
+            A glimpse of Anna and the private, candlelit space — calm, discreet,
+            and designed for complete relaxation from the moment you arrive.
           </p>
         </div>
       </section>
