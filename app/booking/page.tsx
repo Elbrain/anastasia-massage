@@ -54,25 +54,6 @@ export default function BookingPage() {
             experience you&apos;re after and the day and time that suit you. Everything
             stays completely private and discreet.
           </p>
-          {/* MassageHub badge */}
-          <div className="mt-6 flex justify-center">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <a
-              href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya"
-              target="_blank"
-              rel="noopener"
-              title="Featured on MassageHub.uk"
-              className="inline-block opacity-[0.88] hover:opacity-100 hover:-translate-y-px transition-all duration-200"
-            >
-              <img
-                src="https://massagehub.uk/api/badge/sensual-massage-with-leya-in-west-london-leya?style=dark"
-                alt="Featured on MassageHub.uk"
-                width={200}
-                height={61}
-                style={{border: '0', borderRadius: '12px', boxShadow: '0 4px 16px rgba(60,39,28,0.13)', display: 'block'}}
-              />
-            </a>
-          </div>
         </div>
       </section>
 
@@ -103,17 +84,24 @@ export default function BookingPage() {
 
               <AnimatedSection delay={1}>
                 <a
-                  href={`tel:${siteConfig.phone}`}
+                  href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya"
+                  target="_blank"
+                  rel="noopener"
                   className="flex items-center gap-5 bg-cream rounded-3xl border border-rose/15 p-7 card-hover group"
                 >
-                  <div className="w-14 h-14 rounded-2xl bg-rose/15 flex items-center justify-center flex-shrink-0 group-hover:bg-rose/25 transition-colors">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-rose-dark">
-                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.63a16 16 0 006.29 6.29l1.15-1.15a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-                    </svg>
+                  <div className="flex-shrink-0">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="https://massagehub.uk/api/badge/sensual-massage-with-leya-in-west-london-leya?style=dark"
+                      alt="Featured on MassageHub.uk"
+                      width={160}
+                      height={49}
+                      style={{border: '0', borderRadius: '10px', display: 'block'}}
+                    />
                   </div>
                   <div>
-                    <p className="font-display text-2xl text-brown-dark mb-1">{siteConfig.phoneDisplay}</p>
-                    <p className="font-body text-sm text-brown-muted">Call or text · Daily 11:00–22:00</p>
+                    <p className="font-display text-xl text-brown-dark mb-1">VIP Featured on MassageHub</p>
+                    <p className="font-body text-sm text-brown-muted">Read more details and reviews.</p>
                   </div>
                 </a>
               </AnimatedSection>
