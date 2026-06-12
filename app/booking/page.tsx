@@ -54,23 +54,22 @@ export default function BookingPage() {
             experience you&apos;re after and the day and time that suit you. Everything
             stays completely private and discreet.
           </p>
-                    {/* MassageHub badge */}
+          {/* MassageHub badge */}
           <div className="mt-6 flex justify-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <a href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya" target="_blank" rel="noopener" title="Featured on MassageHub.uk">
+            <a
+              href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya"
+              target="_blank"
+              rel="noopener"
+              title="Featured on MassageHub.uk"
+              className="inline-block opacity-[0.88] hover:opacity-100 hover:-translate-y-px transition-all duration-200"
+            >
               <img
                 src="https://massagehub.uk/api/badge/sensual-massage-with-leya-in-west-london-leya?style=dark"
                 alt="Featured on MassageHub.uk"
-                width={200} height={61}
-                style={{
-                  border: '0',
-                  borderRadius: '12px',
-                  opacity: 0.88,
-                  boxShadow: '0 4px 16px rgba(60,39,28,0.13)',
-                  transition: 'opacity 0.2s ease, transform 0.2s ease',
-                }}
-                onMouseOver={(e) => { (e.target as HTMLImageElement).style.opacity = '1'; (e.target as HTMLImageElement).style.transform = 'translateY(-1px)'; }}
-                onMouseOut={(e) => { (e.target as HTMLImageElement).style.opacity = '0.88'; (e.target as HTMLImageElement).style.transform = 'translateY(0)'; }}
+                width={200}
+                height={61}
+                style={{border: '0', borderRadius: '12px', boxShadow: '0 4px 16px rgba(60,39,28,0.13)', display: 'block'}}
               />
             </a>
           </div>
