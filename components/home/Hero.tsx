@@ -73,25 +73,7 @@ export function Hero() {
               </Link>
             </div>
 
-            {/* MassageHub badge */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <a
-              href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya"
-              target="_blank"
-              rel="noopener"
-              title="Featured on MassageHub.uk"
-              className="inline-block mt-8 opacity-[0.88] hover:opacity-100 hover:-translate-y-px transition-all duration-200"
-            >
-              <img
-                src="https://massagehub.uk/api/badge/sensual-massage-with-leya-in-west-london-leya?style=dark"
-                alt="Featured on MassageHub.uk"
-                width={200}
-                height={61}
-                style={{border: '0', borderRadius: '12px', boxShadow: '0 4px 16px rgba(60,39,28,0.13)', display: 'block'}}
-              />
-            </a>
-
-                        {/* Trust badges */}
+            {/* Trust badges */}
             <div className="flex flex-wrap gap-6 mt-12 pt-10 border-t border-rose/20">
               {[
                 { icon: '✦', label: 'Discreet & Private' },

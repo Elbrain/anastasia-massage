@@ -168,6 +168,9 @@ export function Footer() {
 
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <a href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya" target="_blank" rel="noopener" title="Featured on MassageHub.uk — UK massage directory"><img src="https://massagehub.uk/api/badge/sensual-massage-with-leya-in-west-london-leya?style=dark" alt="Featured on MassageHub.uk — UK massage directory" width={250} height={76} style={{border: '0', borderRadius: '10px'}} /></a>
+
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <a href="https://best-escortgirls.com" target="_blank" rel="noopener" title="best-escortgirls.com"><img src="https://best-escortgirls.com/images/banners/b120x60.jpg" alt="best-escortgirls.com" title="best-escortgirls.com" width={120} height={60} /></a>
           </div>
         </div>
       </div>
