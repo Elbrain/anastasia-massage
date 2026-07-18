@@ -5,9 +5,9 @@ export const siteConfig = {
   description:
     'Private sensual massage in West Kensington, London by Anna. Sensual, body-to-body, tantric and nuru massage in a warm, discreet in-call studio (W14). Daily 11:00–22:00. Book via WhatsApp.',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.anamassage4u.co.uk',
-  phone: '+447768164518',
-  phoneDisplay: '+44 7768 164 518',
-  whatsapp: '447768164518',
+  phone: '+447741020371',
+  phoneDisplay: '+44 7741 020 371',
+  whatsapp: '447741020371',
   address: {
     street: 'In-call studio — exact address shared on booking',
     area: 'West Kensington',

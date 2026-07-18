@@ -69,7 +69,7 @@ export function FAQ() {
                 here, just send me a message on WhatsApp — I usually reply quickly.
               </p>
               <a
-                href={`https://wa.me/447768164518`}
+                href={`https://wa.me/447741020371`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-rose inline-flex"
