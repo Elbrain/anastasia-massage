@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Phone, Clock, MapPin } from 'lucide-react'
 import { siteConfig } from '@/lib/siteConfig'
+import { HomeOnly } from './HomeOnly'
 
 const quickLinks = [
   { href: '/services', label: 'Services' },
@@ -163,14 +164,18 @@ export function Footer() {
             Featured On
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <a href="https://www.eurogirlsescort.com" target="_blank" title="EuroGirlsEscort.com"><img src="https://www.eurogirlsescort.com/dist/images/banners/234X60.jpg" alt="EuroGirlsEscort.com" title="EuroGirlsEscort.com" /></a>
+            <HomeOnly>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <a href="https://www.eurogirlsescort.com" target="_blank" title="EuroGirlsEscort.com"><img src="https://www.eurogirlsescort.com/dist/images/banners/234X60.jpg" alt="EuroGirlsEscort.com" title="EuroGirlsEscort.com" /></a>
+            </HomeOnly>
 
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <a href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya" target="_blank" rel="noopener" title="Featured on MassageHub.uk — UK massage directory"><img src="https://massagehub.uk/api/badge/sensual-massage-with-leya-in-west-london-leya?style=dark" alt="Featured on MassageHub.uk — UK massage directory" width={250} height={76} style={{border: '0', borderRadius: '10px'}} /></a>
 
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <a href="https://best-escortgirls.com" target="_blank" rel="noopener" title="best-escortgirls.com"><img src="https://best-escortgirls.com/images/banners/b120x60.jpg" alt="best-escortgirls.com" title="best-escortgirls.com" width={120} height={60} /></a>
+            <HomeOnly>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <a href="https://best-escortgirls.com" target="_blank" rel="noopener" title="best-escortgirls.com"><img src="https://best-escortgirls.com/images/banners/b120x60.jpg" alt="best-escortgirls.com" title="best-escortgirls.com" width={120} height={60} /></a>
+            </HomeOnly>
           </div>
         </div>
       </div>
