@@ -90,7 +90,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="font-display text-xl text-brown-dark mb-3">11. Contact</h2>
-            <p>Questions about these terms should be directed to us on <a href="https://wa.me/447741020371" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">WhatsApp</a>.</p>
+            <p>Questions about these terms should be directed to us on <a href="https://wa.me/447452327767" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">WhatsApp</a>.</p>
           </div>
 
         </div>

@@ -26,7 +26,7 @@ export default function PrivacyPage() {
           <div>
             <h2 className="font-display text-xl text-brown-dark mb-3">1. Who We Are</h2>
             <p>This website is operated by Anna, an independent sensual massage therapist based in London, UK. References to &quot;we&quot;, &quot;us&quot; or &quot;our&quot; in this policy refer to Anna.</p>
-            <p className="mt-3">If you have any questions about this privacy policy or how we handle your data, please contact us on <a href="https://wa.me/447741020371" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">WhatsApp</a>.</p>
+            <p className="mt-3">If you have any questions about this privacy policy or how we handle your data, please contact us on <a href="https://wa.me/447452327767" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">WhatsApp</a>.</p>
           </div>
 
           <div>
@@ -111,7 +111,7 @@ export default function PrivacyPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-4">To exercise any of these rights, contact us at <a href="https://wa.me/447741020371" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">WhatsApp</a>. You also have the right to lodge a complaint with the Information Commissioner&apos;s Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">ico.org.uk</a>.</p>
+            <p className="mt-4">To exercise any of these rights, contact us at <a href="https://wa.me/447452327767" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">WhatsApp</a>. You also have the right to lodge a complaint with the Information Commissioner&apos;s Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" className="text-rose hover:underline">ico.org.uk</a>.</p>
           </div>
 
           <div>
