@@ -157,6 +157,24 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Developer credit */}
+      <div className="border-t border-ivory/10">
+        <div className="container-site py-5">
+          <p className="text-center text-xs text-ivory/40">
+            Developed by{' '}
+            <a
+              href="https://boost18.co.uk/"
+              target="_blank"
+              rel="noopener"
+              className="text-ivory/60 hover:text-rose transition-colors duration-200"
+            >
+              boost18
+            </a>{' '}
+            with <span className="text-rose">♥</span>
+          </p>
+        </div>
+      </div>
+
       {/* Partner banners / backlinks */}
       <div className="border-t border-ivory/10">
         <div className="container-site py-8">
