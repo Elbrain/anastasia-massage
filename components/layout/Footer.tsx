@@ -161,7 +161,7 @@ export function Footer() {
       <div className="border-t border-ivory/10">
         <div className="container-site py-5">
           <p className="text-center text-xs text-ivory/40">
-            Developed by{' '}
+            Developed with <span className="text-rose">♥</span> by{' '}
             <a
               href="https://boost18.co.uk/"
               target="_blank"
@@ -169,8 +169,7 @@ export function Footer() {
               className="text-ivory/60 hover:text-rose transition-colors duration-200"
             >
               boost18
-            </a>{' '}
-            with <span className="text-rose">♥</span>
+            </a>
           </p>
         </div>
       </div>
