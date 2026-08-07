@@ -192,6 +192,9 @@ export function Footer() {
             <HomeOnly>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <a href="https://best-escortgirls.com" target="_blank" rel="noopener" title="best-escortgirls.com"><img src="https://best-escortgirls.com/images/banners/b120x60.jpg" alt="best-escortgirls.com" title="best-escortgirls.com" width={120} height={60} /></a>
+
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <a href="https://www.escort.co.uk" target="_blank" rel="noopener" title="London Escorts At Escort.co.uk"><img src="https://www.escort.co.uk/assets/images/escortcouk.gif" alt="London Escorts At Escort.co.uk" title="London Escorts At Escort.co.uk" width={240} height={60} style={{border: '0'}} /></a>
             </HomeOnly>
           </div>
         </div>
