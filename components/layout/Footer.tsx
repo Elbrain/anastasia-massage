@@ -174,8 +174,8 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Partner banners / backlinks — temporarily visually hidden, links stay in the DOM for crawlers */}
-      <div className="hidden border-t border-ivory/10">
+      {/* Partner banners / backlinks */}
+      <div className="border-t border-ivory/10">
         <div className="container-site py-8">
           <p className="text-center font-body text-[10px] tracking-[0.3em] uppercase text-ivory/30 mb-5">
             Featured On

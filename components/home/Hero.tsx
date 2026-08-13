@@ -79,7 +79,7 @@ export function Hero() {
               target="_blank"
               rel="noopener"
               title="Featured on MassageHub.uk — UK massage directory"
-              className="hidden items-center gap-2 mt-6 px-5 py-2.5 rounded-full bg-brown-dark text-ivory text-sm tracking-wide shadow-soft hover:bg-wine hover:-translate-y-px transition-all duration-200"
+              className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 rounded-full bg-brown-dark text-ivory text-sm tracking-wide shadow-soft hover:bg-wine hover:-translate-y-px transition-all duration-200"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="#C49A66" aria-hidden="true">
                 <path d="M12 2l2.9 6.26 6.6 1.01-4.75 4.63L17.9 20.5 12 17.27 6.1 20.5l1.15-6.6L2.5 9.27l6.6-1.01L12 2z" />
