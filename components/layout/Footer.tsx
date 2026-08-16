@@ -202,6 +202,9 @@ export function Footer() {
                 <a href="https://londonmassagebook.co.uk/" target="_blank" rel="noopener"><img src="https://londonmassagebook.co.uk/img/lmb/lmb-black.png" alt="LMB London Erotic Massage Guide" width={181} height={60} style={{border: '0'}} /></a>
                 <strong className="text-xs text-ivory/60 font-normal">My business Listed in <a href="https://londonmassagebook.co.uk/" target="_blank" rel="noopener" className="text-ivory/80 hover:text-rose transition-colors duration-200">London Massage Book</a></strong>
               </div>
+
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <a title="London & UK Sensual Massage Directory" href="https://www.tantric-angels.co.uk/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="https://www.tantric-angels.co.uk/wp-content/uploads/2024/12/300_39_tantric_angels_banner.png" alt="Tantric Angels Directory" width={300} height={39} /></a>
             </HomeOnly>
           </div>
         </div>
