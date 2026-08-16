@@ -205,6 +205,9 @@ export function Footer() {
 
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <a title="London & UK Sensual Massage Directory" href="https://www.tantric-angels.co.uk/" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="https://www.tantric-angels.co.uk/wp-content/uploads/2024/12/300_39_tantric_angels_banner.png" alt="Tantric Angels Directory" width={300} height={39} /></a>
+
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <a href="https://www.world-escort-guide.com/" title="Escort Directory" target="_blank" rel="noopener"><img src="https://www.world-escort-guide.com/assets/escortguide/weg7.jpg" alt="Escort Directory" /></a>
             </HomeOnly>
           </div>
         </div>
