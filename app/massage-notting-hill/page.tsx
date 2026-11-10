@@ -21,6 +21,11 @@ const config: LocalAreaConfig = {
     <h2>Booking from Notting Hill</h2>
     <p>Same-day appointments are often available, though evenings can fill fast. Send a quick WhatsApp message with your preferred time and I'll confirm discreetly.</p>
   `,
+  travel: [
+    { from: "Notting Hill Gate", how: "District line to Earl's Court, change for West Kensington — about 15 minutes" },
+    { from: "Holland Park", how: "About 10 minutes by taxi" },
+    { from: "Portobello Road / Ladbroke Grove", how: "10–15 minutes by taxi" },
+  ],
   faqs: [
     {
       question: 'Where do you see Notting Hill clients?',

@@ -1,14 +1,15 @@
 import type { Metadata } from 'next'
 import { buildMetadata } from '@/lib/metadata'
-import { breadcrumbSchema } from '@/lib/schema'
+import Link from 'next/link'
+import { breadcrumbSchema, faqSchema } from '@/lib/schema'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 import { BookingCTA } from '@/components/home/BookingCTA'
 import { siteConfig } from '@/lib/siteConfig'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sensual Massage Prices London',
+  title: 'Massage Prices — From £80 (W14)',
   description:
-    'Transparent pricing for sensual, tantric, nuru and body-to-body massage in West Kensington, London. Discreet in-call studio (W14), daily 11:00–22:00.',
+    'Prices for sensual, tantric, nuru and body-to-body massage with Anna in West Kensington, London W14: £80–£100 for 30 minutes, £120–£140 for an hour. Cash on the day. Daily 11:00–22:00.',
   path: '/pricing',
   keywords: ['sensual massage prices london', 'tantric massage cost london', 'nuru massage price london'],
 })
@@ -59,6 +60,14 @@ const pricingTiers = [
   },
 ]
 
+const pricingFaqs = [
+  { question: 'How much does a sensual massage cost in London with Anna?', answer: 'A sensual or relaxing massage is £80 for 30 minutes or £120 for an hour. Tantric, nuru and body-to-body massage are £100 for 30 minutes or £140 for an hour. Aromatherapy massage is £90 or £120, and full body and hot stone massage are £130 for an hour.' },
+  { question: 'What payment methods do you accept?', answer: 'Cash on the day, please, in a discreet envelope. Card and transfer are not accepted.' },
+  { question: 'Is the price inclusive of everything?', answer: 'Yes. The price covers the full session, warm oils or Nuru gel, fresh linens and a relaxed, unhurried experience. There are no surprise add-ons.' },
+  { question: 'Do you see regular clients?', answer: 'Of course — many clients return regularly, and I am always happy to look after you again. Just message me to arrange your next visit.' },
+  { question: 'What is the cancellation policy?', answer: 'Please give at least 24 hours notice to cancel or reschedule. Late cancellations may be subject to a fee. Life happens — just let me know as early as you can.' },
+]
+
 export default function PricingPage() {
   const breadcrumb = breadcrumbSchema([
     { name: 'Home', href: '/' },
@@ -70,6 +79,10 @@ export default function PricingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(pricingFaqs)) }}
       />
 
       {/* Hero */}
@@ -171,14 +184,16 @@ export default function PricingPage() {
         <div className="container-site max-w-3xl mx-auto">
           <AnimatedSection className="text-center mb-12">
             <h2 className="font-display text-display-md text-brown-dark">Pricing Questions</h2>
+            <p className="text-brown text-sm mt-4">
+              Wondering how these compare? Read my{' '}
+              <Link href="/blog/sensual-tantric-massage-prices-london" className="text-rose-dark underline underline-offset-2">
+                guide to sensual and tantric massage prices in London
+              </Link>
+              .
+            </p>
           </AnimatedSection>
           <div className="space-y-6">
-            {[
-              { q: 'What payment methods do you accept?', a: 'Cash on the day, please, in a discreet envelope. Card and transfer are not accepted.' },
-              { q: 'Is the price inclusive of everything?', a: 'Yes. The price covers the full session, warm oils or Nuru gel, fresh linens and a relaxed, unhurried experience. There are no surprise add-ons.' },
-              { q: 'Do you see regular clients?', a: 'Of course — many clients return regularly, and I am always happy to look after you again. Just message me to arrange your next visit.' },
-              { q: 'What is the cancellation policy?', a: 'Please give at least 24 hours notice to cancel or reschedule. Late cancellations may be subject to a fee. Life happens — just let me know as early as you can.' },
-            ].map((item, i) => (
+            {pricingFaqs.map((f) => ({ q: f.question, a: f.answer })).map((item, i) => (
               <AnimatedSection key={i} delay={(Math.min(i + 1, 5) as 1 | 2 | 3 | 4 | 5)}>
                 <div className="bg-ivory rounded-2xl border border-rose/15 p-6">
                   <h3 className="font-display text-lg text-brown-dark mb-2">{item.q}</h3>

@@ -21,6 +21,11 @@ const config: LocalAreaConfig = {
     <h2>Booking from Chelsea</h2>
     <p>Weekend and evening appointments fill quickly with Chelsea clients — message ahead to secure your preferred time. A quick WhatsApp message is all it takes, and same-day visits are often possible.</p>
   `,
+  travel: [
+    { from: "Sloane Square", how: "District line direct to West Kensington — about 10 minutes" },
+    { from: "Fulham Broadway", how: "District line, change at Earl's Court — about 15 minutes" },
+    { from: "King's Road by taxi", how: "10–15 minutes, depending on traffic" },
+  ],
   faqs: [
     {
       question: 'Where do you see Chelsea clients?',

@@ -21,6 +21,12 @@ const config: LocalAreaConfig = {
     <h2>Booking from Central London</h2>
     <p>After-work and evening slots are in demand — a day's notice is wise. Send a quick WhatsApp message with your preferred time and I'll confirm discreetly, often the same day.</p>
   `,
+  travel: [
+    { from: "Piccadilly Circus / Leicester Square", how: "Piccadilly line direct to Barons Court — about 15–20 minutes" },
+    { from: "Green Park (Mayfair)", how: "Piccadilly line direct to Barons Court — about 15 minutes" },
+    { from: "Covent Garden / Holborn", how: "Piccadilly line direct to Barons Court — about 20–25 minutes" },
+    { from: "By taxi", how: "20–30 minutes, depending on traffic" },
+  ],
   faqs: [
     {
       question: 'Where do you see Central London clients?',

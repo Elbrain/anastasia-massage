@@ -7,6 +7,8 @@ import { buildMetadata } from '@/lib/metadata'
 import { breadcrumbSchema } from '@/lib/schema'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
+export const dynamicParams = false
+
 export async function generateStaticParams() {
   return BLOG_CATEGORIES.map((cat) => ({ slug: cat.slug }))
 }
@@ -20,10 +22,9 @@ export async function generateMetadata({
   if (!category) return {}
 
   return buildMetadata({
-    title: `${category.label} — Massage Blog`,
-    description: `Articles about ${category.label.toLowerCase()} from Anna, certified massage therapist in London.`,
+    title: `${category.label} — Guides & Articles`,
+    description: `${category.description} Written by Anna, independent massage therapist in West Kensington, London.`,
     path: `/blog/category/${category.slug}`,
-    keywords: [`${category.label.toLowerCase()} massage`, 'massage blog london', 'massage advice'],
   })
 }
 
@@ -35,7 +36,7 @@ export default async function BlogCategoryPage({ params }: { params: { slug: str
 
   const breadcrumb = breadcrumbSchema([
     { name: 'Home', href: '/' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'Journal', href: '/blog' },
     { name: category.label, href: `/blog/category/${category.slug}` },
   ])
 
@@ -52,13 +53,14 @@ export default async function BlogCategoryPage({ params }: { params: { slug: str
           <nav className="flex items-center gap-2 text-xs text-brown-muted mb-6 justify-center flex-wrap">
             <Link href="/" className="hover:text-brown-dark transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/blog" className="hover:text-brown-dark transition-colors">Blog</Link>
+            <Link href="/blog" className="hover:text-brown-dark transition-colors">Journal</Link>
             <span>/</span>
             <span className="text-brown-dark">{category.label}</span>
           </nav>
           <p className="font-body text-xs tracking-[0.25em] uppercase text-rose mb-4">Category</p>
           <h1 className="font-display text-display-lg text-brown-dark mb-5">{category.label}</h1>
-          <p className="text-brown text-lg">
+          <p className="text-brown text-lg leading-relaxed max-w-xl mx-auto">{category.description}</p>
+          <p className="text-brown-muted text-sm mt-4">
             {posts.length} article{posts.length !== 1 ? 's' : ''} in this category
           </p>
         </div>

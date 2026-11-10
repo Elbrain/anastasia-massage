@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { buildMetadata } from '@/lib/metadata'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Privacy Policy — Anna Massage Therapist London',
+  title: 'Privacy Policy',
   description: 'Privacy policy for Anna Massage Therapist. How we collect, use and protect your personal information.',
   path: '/privacy',
 })

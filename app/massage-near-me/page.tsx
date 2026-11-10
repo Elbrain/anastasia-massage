@@ -2,7 +2,12 @@ import type { Metadata } from 'next'
 import { LocalAreaPage, generateLocalMetadata, type LocalAreaConfig } from '@/lib/localAreaPage'
 
 const config: LocalAreaConfig = {
-  area: 'Near Me',
+  area: 'West & Central London',
+  label: 'Massage Near Me',
+  h1: 'Sensual & Tantric Massage Near Me in West London',
+  metaTitle: 'Sensual & Tantric Massage Near Me — West London',
+  metaDescription:
+    "Sensual, tantric or nuru massage near you? Anna's private in-call studio is in West Kensington, W14 — close to Earl's Court, Hammersmith and Fulham. From £80.",
   slug: 'massage-near-me',
   postcodes: 'West London',
   intro:
@@ -21,6 +26,13 @@ const config: LocalAreaConfig = {
     <h2>Book in Minutes</h2>
     <p>The quickest way to book is a WhatsApp message. Tell me what you're in the mood for and your preferred time, and I'll confirm discreetly — often the same day.</p>
   `,
+  travel: [
+    { from: "West Kensington station", how: "District line — the closest station" },
+    { from: "Barons Court station", how: "District and Piccadilly lines — also close by" },
+    { from: "Earl's Court", how: "One stop away on the District line" },
+    { from: "Hammersmith", how: "One to two stops away" },
+    { from: "West End (Piccadilly Circus)", how: "Piccadilly line direct to Barons Court — about 15–20 minutes" },
+  ],
   faqs: [
     {
       question: 'Where exactly are you located?',

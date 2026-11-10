@@ -5,7 +5,7 @@ import { siteConfig } from '@/lib/siteConfig'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Book a Sensual Massage in London',
+  title: 'Book a Massage — WhatsApp or Call',
   description:
     'Book a sensual, tantric, nuru or body-to-body massage with Anna in West Kensington, London. Message on WhatsApp or call. Daily 11:00–22:00. Discreet in-call studio (W14).',
   path: '/booking',

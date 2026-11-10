@@ -1,17 +1,18 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { buildMetadata } from '@/lib/metadata'
-import { breadcrumbSchema } from '@/lib/schema'
+import Link from 'next/link'
+import { aboutPageSchema, breadcrumbSchema } from '@/lib/schema'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 import { BookingCTA } from '@/components/home/BookingCTA'
 import { siteConfig } from '@/lib/siteConfig'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'About Anna — Sensual Massage Therapist',
+  title: 'About Anna — Independent Masseuse',
   description:
     'Meet Anna, a sensual massage therapist in West Kensington, London. Sensual, body-to-body, tantric and nuru massage in a warm, private and discreet in-call studio.',
   path: '/about',
-  keywords: ['about anastasia massage', 'sensual massage therapist london', 'tantric massage west kensington'],
+  keywords: ['independent masseuse london', 'sensual massage therapist london', 'tantric massage west kensington', 'anna massage london'],
 })
 
 export default function AboutPage() {
@@ -25,6 +26,10 @@ export default function AboutPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema()) }}
       />
 
       {/* Hero */}
@@ -110,6 +115,35 @@ export default function AboutPage() {
                 <p>
                   Above all, I want you to feel safe, comfortable and beautifully cared for from
                   the moment you arrive to the moment you leave.
+                </p>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={2} className="mt-14">
+              <h2 className="font-display text-display-md text-brown-dark mb-6">The Practical Details</h2>
+              <div className="space-y-5 text-brown leading-relaxed">
+                <p>
+                  I am an independent therapist — I work alone, for myself, from my own private
+                  in-call studio in West Kensington, London W14, a few minutes from West Kensington
+                  and Barons Court stations. I am available every day from 11:00 to 22:00, and I
+                  do not offer outcall.
+                </p>
+                <p>
+                  My menu covers{' '}
+                  <Link href="/services/sensual-massage">sensual</Link>,{' '}
+                  <Link href="/services/tantric-massage">tantric</Link>,{' '}
+                  <Link href="/services/nuru-massage">nuru</Link> and{' '}
+                  <Link href="/services/body-to-body-massage">body to body massage</Link>, along with
+                  full body, relaxing, aromatherapy and hot stone massage. You can see every
+                  treatment on the <Link href="/services">massage menu</Link>, the full{' '}
+                  <Link href="/pricing">price list</Link>, and answers to the questions I am asked
+                  most on the <Link href="/faq">FAQ page</Link>.
+                </p>
+                <p>
+                  I also write about my work in the <Link href="/blog">journal</Link> — including{' '}
+                  <Link href="/blog/erotic-massage-why-i-love-giving-it">why I love giving massage</Link>{' '}
+                  and a guide to{' '}
+                  <Link href="/blog/first-sensual-massage-london-what-to-expect">your first visit</Link>.
                 </p>
               </div>
             </AnimatedSection>

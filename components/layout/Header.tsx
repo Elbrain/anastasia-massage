@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/portfolio', label: 'Gallery' },
   { href: '/pricing', label: 'Pricing' },
   { href: '/blog', label: 'Journal' },
+  { href: '/faq', label: 'FAQ' },
   { href: '/about', label: 'About' },
 ]
 
@@ -39,7 +40,7 @@ export function Header() {
           <Link href="/" className="group transition-opacity duration-200 hover:opacity-85">
             <Image
               src="/logo-transparent.png"
-              alt="Anna Massage Therapist London"
+              alt="Anna — Sensual Massage London"
               width={200}
               height={67}
               className="object-contain transition-transform duration-300 group-hover:scale-[1.03]"
@@ -48,8 +49,9 @@ export function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-7">
-            {navLinks.map((link) => (
+          <nav aria-label="Main" className="hidden lg:flex items-center gap-6 xl:gap-7">
+            {/* The logo already links home, so "Home" is shown in the mobile menu only */}
+            {navLinks.filter((link) => link.href !== '/').map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -75,7 +77,7 @@ export function Header() {
               </svg>
               WhatsApp
             </a>
-            <Link href="/booking" className="btn-primary text-sm">
+            <Link href="/booking" className="btn-primary text-sm whitespace-nowrap">
               Book Now
             </Link>
           </div>

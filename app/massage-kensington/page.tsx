@@ -21,6 +21,12 @@ const config: LocalAreaConfig = {
     <h2>Booking from Kensington</h2>
     <p>Evening slots are popular with Kensington clients, so a day or two's notice is wise for those. Message me on WhatsApp to arrange your visit — discreet, relaxed, and often available the same day.</p>
   `,
+  travel: [
+    { from: "High Street Kensington", how: "District line via Earl's Court — about 10 minutes" },
+    { from: "Kensington (Olympia)", how: "A 10–15 minute walk" },
+    { from: "South Kensington", how: "District line direct to West Kensington — about 8 minutes" },
+    { from: "By taxi", how: "5–10 minutes from most of W8" },
+  ],
   faqs: [
     {
       question: 'Where do you see Kensington clients?',

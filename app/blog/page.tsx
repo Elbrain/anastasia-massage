@@ -3,15 +3,16 @@ import Link from 'next/link'
 import { getAllPosts, BLOG_CATEGORIES } from '@/lib/blog'
 import { BlogCard } from '@/components/blog/BlogCard'
 import { buildMetadata } from '@/lib/metadata'
-import { breadcrumbSchema } from '@/lib/schema'
+import { breadcrumbSchema, BUSINESS_ID, PERSON_ID } from '@/lib/schema'
+import { siteConfig } from '@/lib/siteConfig'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Massage Blog — London Tips, Techniques & Wellness',
+  title: 'Sensual & Tantric Massage Guides',
   description:
-    'Expert advice on massage techniques, wellness, sports recovery, stress relief and massage in London. Written by Anna, certified massage therapist.',
+    'Honest guides to sensual, tantric, nuru and body-to-body massage in London — what each one is, what to expect, prices and etiquette. Written by Anna, independent massage therapist in West Kensington.',
   path: '/blog',
-  keywords: ['massage blog', 'massage advice london', 'massage tips', 'wellness advice london'],
+  keywords: ['sensual massage guide', 'tantric massage guide london', 'what is nuru massage', 'massage advice london'],
 })
 
 export default async function BlogPage() {
@@ -21,8 +22,25 @@ export default async function BlogPage() {
 
   const breadcrumb = breadcrumbSchema([
     { name: 'Home', href: '/' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'Journal', href: '/blog' },
   ])
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': `${siteConfig.url}/blog#blog`,
+    name: 'The Journal — Anna, Sensual Massage London',
+    url: `${siteConfig.url}/blog`,
+    inLanguage: 'en-GB',
+    author: { '@id': PERSON_ID },
+    publisher: { '@id': BUSINESS_ID },
+    blogPost: posts.slice(0, 20).map((p) => ({
+      '@type': 'BlogPosting',
+      headline: p.title,
+      url: `${siteConfig.url}/blog/${p.slug}`,
+      datePublished: p.date,
+      dateModified: p.updated,
+    })),
+  }
 
   return (
     <>
@@ -30,17 +48,22 @@ export default async function BlogPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
 
       {/* Hero */}
       <section className="pt-36 pb-16 bg-cream">
         <div className="container-site max-w-3xl mx-auto text-center">
           <p className="font-body text-xs tracking-[0.25em] uppercase text-rose mb-4">Insights & Advice</p>
           <h1 className="font-display text-display-lg text-brown-dark mb-5">
-            The Massage Blog
+            The Journal
           </h1>
           <p className="text-brown leading-relaxed text-lg max-w-xl mx-auto">
-            Guides on massage techniques, local London finds, wellness and recovery —
-            written for anyone who wants to look after their body properly.
+            Honest guides to sensual, tantric, nuru and body-to-body massage in London —
+            what each one is, what to expect, and how to choose — plus notes on
+            relaxation and wellbeing.
           </p>
         </div>
       </section>
@@ -91,7 +114,7 @@ export default async function BlogPage() {
           {posts.length === 0 && (
             <div className="text-center py-20">
               <p className="font-display text-2xl text-brown-dark mb-3">Articles coming soon</p>
-              <p className="text-brown">Check back shortly for expert massage and wellness content.</p>
+              <p className="text-brown">Check back shortly for new guides.</p>
             </div>
           )}
         </div>

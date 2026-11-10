@@ -21,6 +21,11 @@ const config: LocalAreaConfig = {
     <h2>Booking from Paddington</h2>
     <p>Visiting for business or pleasure? Same-day appointments are often available. A quick WhatsApp message with your preferred time is all it takes.</p>
   `,
+  travel: [
+    { from: "Paddington station", how: "District line to Earl's Court, change for West Kensington — about 20 minutes" },
+    { from: "Bayswater", how: "District line to Earl's Court, then one stop — about 15 minutes" },
+    { from: "By taxi", how: "15–20 minutes, depending on traffic" },
+  ],
   faqs: [
     {
       question: 'Where do you see Paddington clients?',

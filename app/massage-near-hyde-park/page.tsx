@@ -2,9 +2,11 @@ import type { Metadata } from 'next'
 import { LocalAreaPage, generateLocalMetadata, type LocalAreaConfig } from '@/lib/localAreaPage'
 
 const config: LocalAreaConfig = {
-  area: 'Near Hyde Park',
+  area: 'Hyde Park',
+  label: 'Massage near Hyde Park',
+  metaTitle: 'Tantric & Sensual Massage near Hyde Park',
   slug: 'massage-near-hyde-park',
-  postcodes: 'W2 · W1',
+  postcodes: 'W2 · SW7 · W1',
   intro:
     'Sensual massage near Hyde Park with Anna — sensual, body-to-body, tantric and nuru massage at a private in-call studio in West Kensington (W14), an easy journey from the Hyde Park area (Bayswater, Lancaster Gate, Knightsbridge). Discreet and unhurried, daily 11:00–22:00.',
   keywords: ['sensual massage hyde park', 'sensual massage bayswater', 'tantric massage hyde park', 'nuru massage hyde park', 'erotic massage hyde park'],
@@ -21,6 +23,11 @@ const config: LocalAreaConfig = {
     <h2>Booking Near Hyde Park</h2>
     <p>Popular with both locals and visitors staying nearby — same-day appointments are often available. A quick WhatsApp message is all it takes.</p>
   `,
+  travel: [
+    { from: "Hyde Park Corner / Knightsbridge", how: "Piccadilly line direct to Barons Court — about 10 minutes" },
+    { from: "Bayswater / Queensway", how: "District line to Earl's Court, then one stop — about 15 minutes" },
+    { from: "Lancaster Gate / Marble Arch", how: "About 15–20 minutes by taxi" },
+  ],
   faqs: [
     {
       question: 'Where do you see clients near Hyde Park?',

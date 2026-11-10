@@ -9,26 +9,27 @@ const quickLinks = [
   { href: '/booking', label: 'Book / Contact' },
   { href: '/portfolio', label: 'Gallery' },
   { href: '/about', label: 'About' },
+  { href: '/faq', label: 'FAQ' },
   { href: '/blog', label: 'Journal' },
 ]
 
 const localLinks = [
   { href: '/massage-london', label: 'Massage in London' },
-  { href: '/massage-kensington', label: 'Massage Kensington' },
-  { href: '/massage-chelsea', label: 'Massage Chelsea' },
-  { href: '/massage-paddington', label: 'Massage Paddington' },
-  { href: '/massage-westminster', label: 'Massage Westminster' },
-  { href: '/massage-central-london', label: 'Massage Central London' },
-  { href: '/massage-west-london', label: 'Massage West London' },
+  ...siteConfig.areas.map((a) => ({ href: `/${a.slug}`, label: `Massage ${a.name}` })),
   { href: '/massage-near-me', label: 'Massage Near Me' },
 ]
+
+const serviceLinks = siteConfig.services.map((s) => ({
+  href: `/services/${s.slug}`,
+  label: s.name,
+}))
 
 export function Footer() {
   return (
     <footer className="bg-brown-dark text-ivory/80">
       {/* Top section */}
       <div className="container-site py-16 lg:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-6 group">
@@ -93,10 +94,27 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Services */}
+          <div>
+            <h3 className="font-display text-lg text-ivory mb-5">Massages</h3>
+            <ul className="space-y-2.5">
+              {serviceLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-ivory/60 hover:text-rose transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Local areas */}
           <div>
             <h3 className="font-display text-lg text-ivory mb-5">Locations</h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2.5 columns-1">
               {localLinks.map((link) => (
                 <li key={link.href}>
                   <Link
@@ -183,21 +201,21 @@ export function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <HomeOnly>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <a href="https://www.eurogirlsescort.com" target="_blank" title="EuroGirlsEscort.com"><img src="https://www.eurogirlsescort.com/dist/images/banners/234X60.jpg" alt="EuroGirlsEscort.com" title="EuroGirlsEscort.com" /></a>
+              <a href="https://www.eurogirlsescort.com" target="_blank" title="EuroGirlsEscort.com"><img src="https://www.eurogirlsescort.com/dist/images/banners/234X60.jpg" alt="EuroGirlsEscort.com" title="EuroGirlsEscort.com" width={234} height={60} loading="lazy" decoding="async" /></a>
             </HomeOnly>
 
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <a href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya" target="_blank" rel="noopener" title="Featured on MassageHub.uk — UK massage directory"><img src="https://massagehub.uk/api/badge/sensual-massage-with-leya-in-west-london-leya?style=dark" alt="Featured on MassageHub.uk — UK massage directory" width={250} height={76} style={{border: '0', borderRadius: '10px'}} /></a>
+            <a href="https://massagehub.uk/profile/sensual-massage-with-leya-in-west-london-leya" target="_blank" rel="noopener" title="Featured on MassageHub.uk — UK massage directory"><img src="https://massagehub.uk/api/badge/sensual-massage-with-leya-in-west-london-leya?style=dark" alt="Featured on MassageHub.uk — UK massage directory" width={250} height={76} loading="lazy" decoding="async" style={{border: '0', borderRadius: '10px'}} /></a>
 
             <HomeOnly>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <a href="https://best-escortgirls.com" target="_blank" rel="noopener" title="best-escortgirls.com"><img src="https://best-escortgirls.com/images/banners/b120x60.jpg" alt="best-escortgirls.com" title="best-escortgirls.com" width={120} height={60} /></a>
+              <a href="https://best-escortgirls.com" target="_blank" rel="noopener" title="best-escortgirls.com"><img src="https://best-escortgirls.com/images/banners/b120x60.jpg" alt="best-escortgirls.com" title="best-escortgirls.com" width={120} height={60} loading="lazy" decoding="async" /></a>
 
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <a href="https://www.escort.co.uk" target="_blank" rel="noopener" title="London Escorts At Escort.co.uk"><img src="https://www.escort.co.uk/assets/images/escortcouk.gif" alt="London Escorts At Escort.co.uk" title="London Escorts At Escort.co.uk" width={240} height={60} style={{border: '0'}} /></a>
+              <a href="https://www.escort.co.uk" target="_blank" rel="noopener" title="London Escorts At Escort.co.uk"><img src="https://www.escort.co.uk/assets/images/escortcouk.gif" alt="London Escorts At Escort.co.uk" title="London Escorts At Escort.co.uk" width={240} height={60} loading="lazy" decoding="async" style={{border: '0'}} /></a>
 
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <a href="https://www.world-escort-guide.com/" title="Escort Directory" target="_blank" rel="noopener"><img src="https://www.world-escort-guide.com/assets/escortguide/weg7.jpg" alt="Escort Directory" /></a>
+              <a href="https://www.world-escort-guide.com/" title="Escort Directory" target="_blank" rel="noopener"><img src="https://www.world-escort-guide.com/assets/escortguide/weg7.jpg" alt="Escort Directory" loading="lazy" decoding="async" /></a>
             </HomeOnly>
           </div>
         </div>

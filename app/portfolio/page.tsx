@@ -5,17 +5,17 @@ import { BookingCTA } from '@/components/home/BookingCTA'
 import { PortfolioGallery } from '@/components/portfolio/PortfolioGallery'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Gallery — Anna & The Space',
+  title: 'Gallery — Anna & Her Studio',
   description:
     'A glimpse of Anna and the private, candlelit space. Sensual massage in West Kensington, London — calm, discreet and designed for complete relaxation.',
   path: '/portfolio',
-  keywords: ['sensual massage london gallery', 'anastasia massage london', 'private massage room london'],
+  keywords: ['sensual massage london gallery', 'anna massage london', 'private massage room london'],
 })
 
 export default function PortfolioPage() {
   const breadcrumb = breadcrumbSchema([
     { name: 'Home', href: '/' },
-    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Gallery', href: '/portfolio' },
   ])
 
   return (

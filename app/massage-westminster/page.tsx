@@ -21,6 +21,11 @@ const config: LocalAreaConfig = {
     <h2>Booking from Westminster</h2>
     <p>Lunchtime and after-work appointments are popular — message ahead to lock in your preferred slot. A quick WhatsApp message is all it takes, and same-day visits are often available.</p>
   `,
+  travel: [
+    { from: "Westminster / St James's Park", how: "District line direct to West Kensington — about 20 minutes" },
+    { from: "Victoria", how: "District line direct — about 15 minutes" },
+    { from: "By taxi", how: "20–25 minutes, depending on traffic" },
+  ],
   faqs: [
     {
       question: 'Where do you see Westminster clients?',

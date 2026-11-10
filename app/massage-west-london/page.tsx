@@ -21,6 +21,13 @@ const config: LocalAreaConfig = {
     <h2>Booking in West London</h2>
     <p>Being local, same-day appointments are often easy to arrange. Just send a quick WhatsApp message with your preferred time and I'll confirm discreetly.</p>
   `,
+  travel: [
+    { from: "Hammersmith", how: "One stop to Barons Court on the District or Piccadilly line" },
+    { from: "Earl's Court", how: "One stop to West Kensington on the District line" },
+    { from: "Chiswick (Turnham Green)", how: "District line direct — about 10 minutes" },
+    { from: "Fulham", how: "A short walk or bus ride up North End Road" },
+    { from: "Shepherd's Bush", how: "About 10 minutes by taxi or bus" },
+  ],
   faqs: [
     {
       question: 'Where is your West London studio?',

@@ -5,11 +5,12 @@ import { breadcrumbSchema, faqSchema } from '@/lib/schema'
 import { AnimatedSection } from '@/components/ui/AnimatedSection'
 import { BookingCTA } from '@/components/home/BookingCTA'
 import { siteConfig } from '@/lib/siteConfig'
+import { FaqList } from '@/components/ui/FaqList'
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sensual Massage London — Anna',
+  title: 'Sensual Massage in London — By Area',
   description:
-    'Sensual massage in London by Anna. Sensual, body-to-body, tantric and nuru massage at a private in-call studio in West Kensington (W14). Daily 11:00–22:00. Discreet and unhurried.',
+    'Sensual massage in London with Anna: sensual, tantric, nuru and body-to-body massage at a private in-call studio in West Kensington (W14). From £80. Daily 11:00–22:00. Discreet and unhurried.',
   path: '/massage-london',
   keywords: ['sensual massage london', 'tantric massage london', 'nuru massage london', 'body to body massage london', 'erotic massage london'],
 })
@@ -40,14 +41,7 @@ const faqs = [
 ]
 
 const areas = [
-  { href: '/massage-west-london', name: 'West London' },
-  { href: '/massage-kensington', name: 'Kensington' },
-  { href: '/massage-chelsea', name: 'Chelsea' },
-  { href: '/massage-notting-hill', name: 'Notting Hill' },
-  { href: '/massage-paddington', name: 'Paddington' },
-  { href: '/massage-westminster', name: 'Westminster' },
-  { href: '/massage-central-london', name: 'Central London' },
-  { href: '/massage-near-hyde-park', name: 'Hyde Park Area' },
+  ...siteConfig.areas.map((a) => ({ href: `/${a.slug}`, name: a.name })),
   { href: '/massage-near-me', name: 'Near Me' },
 ]
 
@@ -104,6 +98,7 @@ export default function MassageLondonPage() {
               <AnimatedSection key={service.slug} delay={(Math.min(i % 4, 5) as 0 | 1 | 2 | 3 | 4 | 5)}>
                 <Link href={`/services/${service.slug}`} className="service-card flex flex-col h-full group">
                   <h3 className="font-display text-xl text-brown-dark mb-2 group-hover:text-brown transition-colors">{service.name}</h3>
+                  <p className="text-sm text-brown-muted leading-relaxed mb-4">{service.summary}</p>
                   <div className="flex items-center justify-between mt-auto pt-4 border-t border-rose/20">
                     <span className="text-xs text-brown-muted">{service.price}</span>
                     <span className="text-rose text-xs">→</span>
@@ -125,6 +120,7 @@ export default function MassageLondonPage() {
                 <p>London has countless massage options. This is for people who want something more intimate — a slow, sensual experience in a private, candlelit space, with complete discretion.</p>
                 <p>Every session begins with a relaxed chat about what you're in the mood for, then unfolds entirely at your pace. No rushing, no judgement, no watching the clock.</p>
                 <p>All sessions are in-call at my private studio in West Kensington (W14), easily reached from across West and Central London. Bookable daily from 11:00 to 22:00, including weekends.</p>
+                <p>New to this? Start with <Link href="/blog/first-sensual-massage-london-what-to-expect" className="text-rose-dark underline underline-offset-2">what to expect from your first sensual massage</Link>, compare <Link href="/blog/erotic-massage-types-tantric-nuru-naturist-london" className="text-rose-dark underline underline-offset-2">tantric, nuru and body-to-body massage</Link>, or see <Link href="/blog/sensual-tantric-massage-prices-london" className="text-rose-dark underline underline-offset-2">what a sensual massage costs in London</Link>.</p>
               </div>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/about" className="btn-secondary">Learn More</Link>
@@ -183,16 +179,7 @@ export default function MassageLondonPage() {
           <AnimatedSection className="text-center mb-10">
             <h2 className="font-display text-display-md text-brown-dark">Frequently Asked Questions</h2>
           </AnimatedSection>
-          <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <AnimatedSection key={faq.question} delay={(Math.min(i, 5) as 0 | 1 | 2 | 3 | 4 | 5)}>
-                <div className="bg-ivory rounded-2xl border border-rose/15 p-6">
-                  <h3 className="font-display text-lg text-brown-dark mb-3">{faq.question}</h3>
-                  <p className="text-sm text-brown leading-relaxed">{faq.answer}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
+          <FaqList faqs={faqs} tone="ivory" openFirst />
         </div>
       </section>
 
